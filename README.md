@@ -12,7 +12,7 @@ Small database for IMDB movie
 1. Activate the vitual environment:
 `source projectenv/bin/activate`
 
-Install django if needed:
+   Install django if needed:
 `pip install django`
 
 2. run server on local host
