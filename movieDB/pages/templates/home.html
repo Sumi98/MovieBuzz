@@ -1,6 +1,12 @@
-<a href="{% url 'home' %}">Home</a> | <a href="{% url 'movie' %}">Movies</a>
+{% extends 'base.html' %}
 
+{% block title %}
+Welcome - Home
+{% endblock %}
+
+{% block content %}
+<a href="{% url 'home' %}">Home</a> | <a href="{% url 'movie' %}">Movies</a>
 
 <br/> <br/>
 IMDB database
-
+{% endblock %}
