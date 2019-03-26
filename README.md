@@ -11,6 +11,7 @@ Small database for IMDB movie
 ### To run the server in localhost:
 1. Activate the vitual environment:
 `source projectenv/bin/activate`
+
 Install django if needed:
 `pip install django`
 
