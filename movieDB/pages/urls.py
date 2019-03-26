@@ -7,4 +7,6 @@ urlpatterns = [
     path('movie/', views.movie, name = 'movie'),
     path('director/', views.director, name = 'director'),
     path('actor/', views.actor, name = 'actor'),
+    path('prediction/', views.prediction, name = 'prediction'),
+    path('recommendation/', views.recommendation, name = 'recommendation'),
 ]

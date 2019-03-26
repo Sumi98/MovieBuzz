@@ -12,3 +12,9 @@ def director(request):
 
 def actor(request):
 	return render(request, "actor.html", {})
+
+def prediction(request):
+	return render(request, "prediction.html", {})
+
+def recommendation(request):
+	return render(request, "recommendation.html", {})
