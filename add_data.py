@@ -31,14 +31,15 @@ def main():
     database = "db.sqlite3"
 
     # movie_data_0325.csv column name:
-	# Movie_ID,Year,Rank,Title,Description,Duration,Genre,Rating,Metascore,Votes,Gross_Earning_in_Mil,Director,Actor
+	# Movie_ID, Year, Rank, Title, Description, Duration, Genre, Rating, Metascore, Votes, Gross_Earning_in_Mil, Director, Actor
 
     sql_create_movie_table = """ CREATE TABLE IF NOT EXISTS movie_0325 (
                     Movie_ID integer PRIMARY KEY,
-                    year integer NOT NULL,
-                    rank integer NOT NULL,
+                    Year integer NOT NULL,
+                    Rank integer NOT NULL,
                     Title text NOT NULL,
                     Description text,
+                    Duration integer,
                     Genre text NOT NULL,
                     Rating real,
                     Metascore integer,
@@ -50,21 +51,27 @@ def main():
  
     # create a database connection
     conn = create_connection(database)
+    cur = conn.cursor()
     if conn is not None:
         # create movie table
         create_table(conn, sql_create_movie_table)
     else:
         print("Error! cannot create the database connection.")
 
+    # insert movie records 
+    with open('Data/movie_data_0325.csv','r', encoding='utf8') as fin:
+        # csv.DictReader uses first line in file for column headings by default
+        dr = csv.DictReader(fin) # default delimiter: comma
+        to_db = [(col['Movie_ID'], col['Year'], col['Rank'], col['Title'], col['Description'], col['Duration'], col['Genre'], col['Rating'], col['Metascore'], col['Votes'], col['Gross_Earning_in_Mil'], col['Director'], col['Actor']) for col in dr]
+
+    cur.executemany("""INSERT INTO movie_0325 
+    				(Movie_ID, Year, Rank, Title, Description, Duration, Genre, Rating, Metascore, Votes, Gross_Earning_in_Mil, Director, Actor) 
+    				VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);""", to_db)
+    conn.commit()
+    # conn.close()
+
 if __name__ == '__main__':
     main()
 
-with open('Data/movie_data_0325.csv','rb') as fin: # `with` statement available in 2.5+
-    # csv.DictReader uses first line in file for column headings by default
-    dr = csv.DictReader(fin) # comma is default delimiter
-    to_db = [(i['col1'], i['col2']) for i in dr]
 
-cur.executemany("INSERT INTO t (col1, col2) VALUES (?, ?);", to_db)
-con.commit()
-con.close()
 
