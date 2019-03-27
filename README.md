@@ -23,5 +23,7 @@ Small database for IMDB movie
 
 ### Next Stage Work (after initial demo)
 - [ ] Localhost to domain name (using Apache)?
+- [ ] Add more information about other entity: Actors, Directors
+- [ ] Add more information about movie: create seperate table for prize (i.e. Movie(Movie_ID, Prize)) if needed. Same for Actors, Directors
 - [ ] Prediction and recommendation
 - [ ] Better UI
