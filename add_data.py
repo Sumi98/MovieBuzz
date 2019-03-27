@@ -30,9 +30,9 @@ def create_table(conn, create_table_sql):
 def main():
     database = "db.sqlite3"
 
+    # --------- Movie Database ------------
     # movie_data_0325.csv column name:
 	# Movie_ID, Year, Rank, Title, Description, Duration, Genre, Rating, Metascore, Votes, Gross_Earning_in_Mil, Director, Actor
-
     sql_create_movie_table = """ CREATE TABLE IF NOT EXISTS movie_0325 (
                     Movie_ID integer PRIMARY KEY,
                     Year integer NOT NULL,
@@ -68,7 +68,9 @@ def main():
     				(Movie_ID, Year, Rank, Title, Description, Duration, Genre, Rating, Metascore, Votes, Gross_Earning_in_Mil, Director, Actor) 
     				VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);""", to_db)
     conn.commit()
-    # conn.close()
+    conn.close()
+
+    # --------- Other Database ------------ @ TODO
 
 if __name__ == '__main__':
     main()
