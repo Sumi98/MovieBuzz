@@ -5,7 +5,10 @@ Small database for IMDB movie
 ---------
 ### Project Information:
 * Backend database: sqlite
-* Front-End Interface: Django
+* Front-end interface: Django
+* Needed Python packages:
+	+ [sqlite3](https://docs.python.org/2/library/sqlite3.html): python sqlite connection
+	+ [imdbpie](https://pypi.org/project/imdbpie/): IMDB data
 
 
 ### To run the server in localhost:
@@ -17,3 +20,8 @@ Small database for IMDB movie
 
 2. run server on local host
 `python manage.py runserver`
+
+### Next Stage Work (after initial demo)
+- [ ] Localhost to domain name (using Apache)?
+- [ ] Prediction and recommendation
+- [ ] Better UI
