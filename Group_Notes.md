@@ -14,3 +14,4 @@
 * Similar Projects:
 	+ [Media-Hub](https://github.com/JeeveshN/Media-Hub)
 	+ [NBA DB](https://www.youtube.com/watch?v=KvlmgWRDzqo&t=9s)
+* Add data into `db.sqlite3`: `python3 add_data.py`
