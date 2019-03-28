@@ -20,11 +20,11 @@ def create_table(conn, create_table_sql):
     :param create_table_sql: a CREATE TABLE statement
     :return:
     """
-    try:
-        c = conn.cursor()
-        c.execute(create_table_sql)
-    except Error as e:
-        print(e)
+    # try:
+    c = conn.cursor()
+    c.execute(create_table_sql)
+    # except Error as e:
+    #     print(e)
 
 
 def main():
@@ -35,7 +35,7 @@ def main():
 	# Movie_ID, Year, Rank, Title, Description, Duration, Genre, Rating, Metascore, Votes, Gross_Earning_in_Mil, Director, Actor
 	
     sql_create_movie_table = """ CREATE TABLE IF NOT EXISTS movie_0325 (
-                    -- Movie_ID integer PRIMARY KEY,
+                    Movie_ID integer PRIMARY KEY,
                     Year integer NOT NULL,
                     Rank integer,
                     Title text NOT NULL,

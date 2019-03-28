@@ -3,15 +3,21 @@ from django.db import models
 # Create your models here.
 
 class Movie(models.Model):
-    movieid = models.CharField(max_length=20, primary_key=True)
+    movieid = models.IntegerField(primary_key=True)
+    year = models.IntegerField()
+    rank = models.IntegerField(blank=True, null=True)
     title = models.CharField(max_length=30)
-    year = models.CharField(max_length=4)
-    length = models.CharField(max_length=10)
+    description = models.CharField(max_length=500)
+    duration = models.IntegerField(blank=True, null=True)
     genres = models.CharField(max_length=100)
-    rate = models.IntegerField(default=0)
-    poster = models.URLField(default='')
-    plot = models.CharField(max_length=500)
-    trailer = models.URLField(default='')
+    rating = models.FloatField(blank=True, null=True)
+    metascore = models.IntegerField(blank=True, null=True)
+    votes = models.IntegerField(blank=True, null=True)
+    gross_earning_in_mil = models.FloatField(blank=True, null=True)
+    director = models.CharField(max_length=30)
+    actor = models.CharField(max_length=30)
+    # poster = models.URLField(default='')
+    # trailer = models.URLField(default='')
 
     def __str__(self):
         return self.movieid + '|' + self.title
