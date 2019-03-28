@@ -26,5 +26,7 @@ Same for Actors, Directors
 * Similar Projects:
 	+ [Media-Hub](https://github.com/JeeveshN/Media-Hub)
 	+ [NBA DB](https://www.youtube.com/watch?v=KvlmgWRDzqo&t=9s)
+	+ [Moviehunter](https://github.com/BruceHenry/movie-website-django)
 * Add data into `db.sqlite3`:
     `python3 add_data.py`
+* Superuser: group50, yslenjoy@gmail.com, 411group50
