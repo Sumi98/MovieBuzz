@@ -33,14 +33,15 @@ def main():
     # --------- Movie Database ------------
     # movie_data_0325.csv column name:
 	# Movie_ID, Year, Rank, Title, Description, Duration, Genre, Rating, Metascore, Votes, Gross_Earning_in_Mil, Director, Actor
+	
     sql_create_movie_table = """ CREATE TABLE IF NOT EXISTS movie_0325 (
-                    Movie_ID integer PRIMARY KEY,
+                    -- Movie_ID integer PRIMARY KEY,
                     Year integer NOT NULL,
-                    Rank integer NOT NULL,
+                    Rank integer,
                     Title text NOT NULL,
                     Description text,
                     Duration integer,
-                    Genre text NOT NULL,
+                    Genre text,
                     Rating real,
                     Metascore integer,
                     Votes integer,
