@@ -29,6 +29,7 @@ def home(request):
 
 
 def movie(request):
+
 	base_dir = os.path.abspath(__file__)
 
 	for i in range(3):
@@ -45,7 +46,10 @@ def movie(request):
 						actor=line['Actor'])
 
 			tmp.save()
-	return render(request, "movie.html", {})
+
+	all_movies = Movie.objects.all()
+
+	return render(request, "movie.html", {'Movie': all_movies})
 
 
 def director(request):

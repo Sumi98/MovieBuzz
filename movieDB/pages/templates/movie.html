@@ -6,6 +6,52 @@ All movies
 
 {% block content %}
 <br/><br/>
-MOVIES<br/><br/>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+th, td{
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2>Movie Table</h2>
+<table>
+    <tr>
+        <th>MovieID</th>
+        <th>Year</th>
+        <th>Rank</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Duration</th>
+        <th>Genre</th>
+        <th>Rating</th>
+        <th>Metascore</th>
+        <th>Votes</th>
+        <th>Gross_Earning_Mil</th>
+        <th>Director</th>
+        <th>Actor</th>
+    </tr>
+    {% for movie in Movie %}
+    <tr>
+        <th> {{ movie.movieid }}</th>
+        <th> {{ movie.year }}</th>
+        <th> {{ movie.rank }}</th>
+        <th> {{ movie.title }}</th>
+        <th> {{ movie.description }}</th>
+        <th> {{ movie.duration }}</th>
+        <th> {{ movie.genres }}</th>
+        <th> {{ movie.rating }}</th>
+        <th> {{ movie.metascore }}</th>
+        <th> {{ movie.votes }}</th>
+        <th> {{ movie.gross_earning_in_mil }}</th>
+        <th> {{ movie.director }}</th>
+        <th> {{ movie.actor }}</th>
+    </tr>
+    {% endfor %}
+ </table>
 <a href="{% url 'insert_data' %}">Can't find the movie? Add new movies!</a>
 {% endblock %}
