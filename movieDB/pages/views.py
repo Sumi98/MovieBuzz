@@ -57,7 +57,7 @@ def insert_data_submission(request):
 	title = request.POST["title"]
 	genres = request.POST["type"]
 	director_name = request.POST["director"]
-	actor_name = request.POST["actor"]
+	actor_name = request.POST.get("actor", False)
 
 	new_movie = Movie(title=title, year=year, genres=genres, director=director_name, actor=actor_name)
 	new_movie.save()
