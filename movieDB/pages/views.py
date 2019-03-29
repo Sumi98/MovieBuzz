@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Movie
 
 # Create your views here.
 # def whole_list(request, model, page):
@@ -21,20 +22,43 @@ from django.shortcuts import render
 #             'pages': pages}
 #     return render(request, '{}_list.html'.format(model.get_name()), data)
 
+
 def home(request):
 	return render(request, "home.html", {})
+
 
 def movie(request):
 	return render(request, "movie.html", {})
 
+
 def director(request):
 	return render(request, "director.html", {})
+
 
 def actor(request):
 	return render(request, "actor.html", {})
 
+
 def prediction(request):
 	return render(request, "prediction.html", {})
 
+
 def recommendation(request):
 	return render(request, "recommendation.html", {})
+
+
+def insert_data(request):
+	return render(request, "insert_data.html", {})
+
+
+def insert_data_submission(request):
+	print('New Movie Submitted!')
+	year = request.POST["year"]
+	title = request.POST["title"]
+	genres = request.POST["type"]
+	director_name = request.POST["director"]
+	actor_name = request.POST["actor"]
+
+	new_movie = Movie(title=title, year=year, genres=genres, director=director_name, actor=actor_name)
+	new_movie.save()
+	return render(request, "insert_data.html", {})
