@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Movie
-import csv
+import csv, os
 
 # Create your views here.
 # def whole_list(request, model, page):
@@ -29,8 +29,13 @@ def home(request):
 
 
 def movie(request):
+	base_dir = os.path.abspath(__file__)
 
-	with open(r'/Users/andy/PycharmProjects/CS411_Project/Data/movie_data_0325.csv') as f:
+	for i in range(3):
+		base_dir = os.path.dirname(base_dir)
+
+
+	with open(base_dir + '/Data/movie_data_0325.csv') as f:
 		reader = csv.DictReader(f)
 		for line in reader:
 			tmp = Movie(movieid=line['Movie_ID'], year=line['Year'], rank=line['Rank'], title=line['Title'],
