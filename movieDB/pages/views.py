@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Movie
+import csv
 
 # Create your views here.
 # def whole_list(request, model, page):
@@ -28,6 +29,17 @@ def home(request):
 
 
 def movie(request):
+
+	with open(r'/Users/andy/PycharmProjects/CS411_Project/Data/movie_data_0325.csv') as f:
+		reader = csv.DictReader(f)
+		for line in reader:
+			tmp = Movie(movieid=line['Movie_ID'], year=line['Year'], rank=line['Rank'], title=line['Title'],
+						description=line['Description'], duration=line['Duration'], genres=line['Genre'],
+						rating=line['Rating'], metascore=line['Metascore'], votes=line['Votes'],
+						gross_earning_in_mil=line['Gross_Earning_in_Mil'], director=line['Director'],
+						actor=line['Actor'])
+
+			tmp.save()
 	return render(request, "movie.html", {})
 
 
