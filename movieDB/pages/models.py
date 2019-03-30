@@ -8,7 +8,7 @@ class Movie(models.Model):
     year = models.IntegerField()
     rank = models.IntegerField(blank=True, null=True)
     title = models.CharField(max_length=30)
-    description = models.CharField(max_length=500)
+    description = models.CharField(max_length=500, null=True)
     duration = models.IntegerField(blank=True, null=True)
     genres = models.CharField(max_length=100)
     rating = models.FloatField(blank=True, null=True)
