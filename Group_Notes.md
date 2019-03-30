@@ -1,5 +1,5 @@
 ## 03.26 (Before demo 1)
-### Next Stage Work (after initial demo)
+### Next Stage Work (after first demo)
 - [ ] Add more information about other entity: Actors, Directors
 - [ ] Another information for Movies entity:
 	* Using IMDB movie ID (e.g 0499549) in Movie data
@@ -14,6 +14,8 @@
 Same for Actors, Directors
 - [ ] Prediction and recommendation
 - [ ] Better UI
+- [ ] More search types with dropdown box
+- [ ] Pagination
 
 (If time allows)
 - [ ] Localhost to domain name (using Cpanel): Extract credit
