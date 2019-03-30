@@ -5,44 +5,36 @@ Welcome To Our Movie Database!
 {% endblock %}
 
 {% block content %}
-<form method="GET" action="{% url 'search' %}">
-    <input type="text" name="q" value="{{ request.GET.q }}" placeholder="title">
-    <button class="btn btn-success" type="submit">
-            Search
-    </button>
-</form>
-{% if filter_title %}
-    <head>
-    <style>
-        th{
-            max-width: 200px;
-            text-align: center;
-        }
-        td{
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 150px;
-        }
+    {% if filter_title %}
+        <style>
+            th{
+                max-width: 200px;
+                text-align: center;
+            }
+            td{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 150px;
+            }
         </style>
-    </head>
         <table class="table table-hover table-sm">
             <thead class="thead-light" data-file-width="5px">
-                <tr>
-                    <th scope="col">MovieID</th>
-                    <th scope="col">Year</th>
-                    <th scope="col">Annual Rank</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Duration (min)</th>
-                    <th scope="col">Movie Type</th>
-                    <th scope="col">Rating</th>
-                    <th scope="col">MetaScore</th>
-                    <th scope="col">Votes</th>
-                    <th scope="col">Gross Earning (million)</th>
-                    <th scope="col">Director</th>
-                    <th scope="col">Actor</th>
-                </tr>
+            <tr>
+                <th scope="col">MovieID</th>
+                <th scope="col">Year</th>
+                <th scope="col">Annual Rank</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Duration (min)</th>
+                <th scope="col">Movie Type</th>
+                <th scope="col">Rating</th>
+                <th scope="col">MetaScore</th>
+                <th scope="col">Votes</th>
+                <th scope="col">Gross Earning (million)</th>
+                <th scope="col">Director</th>
+                <th scope="col">Actor</th>
+            </tr>
             </thead>
             <tbody>
             {% for movie in filter_title %}
@@ -63,5 +55,14 @@ Welcome To Our Movie Database!
                 </tr>
             {% endfor %}
             </tbody>
-{% endif %}
+        </table>
+    {% else %}
+        <br/>
+        <form method="GET" action="{% url 'search' %}">
+            <div class="form-group" align="center">
+                <input type="text" name="q" value="{{ request.GET.q }}" placeholder="Search from movie title...">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </div>
+        </form>
+    {% endif %}
 {% endblock %}
