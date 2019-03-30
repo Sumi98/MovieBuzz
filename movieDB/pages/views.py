@@ -1,5 +1,6 @@
 from django.contrib import messages
 from django.shortcuts import render, get_object_or_404
+from django.db.models import Q
 from .models import Movie
 import csv, os
 from .forms import MovieForm
@@ -135,3 +136,15 @@ def delete_movie(request, pk):
         'post': post
     }
     return render(request, "new_movie.html", context)
+
+
+def search(request):
+
+
+    template = 'home.html'
+
+    query = request.GET.get('q')
+
+    filter_title = Movie.objects.filter(title__contains=query)
+
+    return render(request, template, {'filter_title':filter_title})
