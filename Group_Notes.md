@@ -32,3 +32,4 @@ Same for Actors, Directors
 * Add data into `db.sqlite3`:
     `python3 add_data.py`
 * Superuser: group50, yslenjoy@gmail.com, 411group50
+
