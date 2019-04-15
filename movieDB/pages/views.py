@@ -4,6 +4,7 @@ from django.db.models import Q
 from .models import Movie
 import csv, os
 from .forms import MovieForm
+from django.core.paginator import Paginator
 
 
 # Create your views here.
@@ -51,7 +52,11 @@ def movie(request):
 
     all_movies = Movie.objects.all()
 
-    return render(request, "movie.html", {'Movie': all_movies})
+    paginator = Paginator(all_movies, 50)
+    page = request.GET.get('page')
+    movies = paginator.get_page(page)
+
+    return render(request, "movie.html", {'Movie': movies})
 
 
 def director(request):
