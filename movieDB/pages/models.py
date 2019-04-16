@@ -15,14 +15,12 @@ class Movie(models.Model):
     metascore = models.CharField(max_length=10, default='0')
     votes = models.IntegerField(blank=True, null=True)
     gross_earning_in_mil = models.CharField(max_length=10, default='0')
-    director = models.CharField(max_length=30)
+    director = models.ForeignKey('Director', related_name='+', on_delete=models.CASCADE, null=True, blank=True)
     actor = models.CharField(max_length=30)
-    # poster = models.URLField(default='')
-    # trailer = models.URLField(default='')
 
-    # def __str__(self):
-    #     return self.movieid + '|' + self.title
-    #
-    # @staticmethod
-    # def get_name():
-    #     return 'movie'
+
+class Director(models.Model):
+    name = models.CharField(max_length=100, primary_key=True)
+    date = models.CharField(max_length=100, null=True)
+    place = models.CharField(max_length=500, null=True)
+    masterpiece = models.CharField(max_length=500, null=True)

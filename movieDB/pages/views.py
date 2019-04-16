@@ -1,7 +1,7 @@
 from django.contrib import messages
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
-from .models import Movie
+from .models import Movie, Director
 import csv, os
 from .forms import MovieForm
 from django.core.paginator import Paginator
@@ -33,6 +33,25 @@ def home(request):
     return render(request, "home.html", {})
 
 
+def director(request):
+    base_dir = os.path.abspath(__file__)
+
+    for i in range(3):
+        base_dir = os.path.dirname(base_dir)
+
+    with open(base_dir + '/Data/director.csv') as g:
+        reader = csv.DictReader(g)
+        for line in reader:
+            tmp = Director(name=line['dr_name'], date=line['dr_date'], place=line['dr_place'],
+                           masterpiece=line['dr_knownfor'])
+
+            tmp.save()
+
+    all_director = Director.objects.all()
+    return render(request, "director.html", {'Director': all_director})
+
+
+
 def movie(request):
     base_dir = os.path.abspath(__file__)
 
@@ -42,10 +61,16 @@ def movie(request):
     with open(base_dir + '/Data/movie_data_0325.csv') as f:
         reader = csv.DictReader(f)
         for line in reader:
+
+            try:
+                director_nm = Director.objects.get(name=line['Director'])
+            except Director.DoesNotExist:
+                director_nm = None
+
             tmp = Movie(movieid=line['Movie_ID'], year=line['Year'], rank=line['Rank'], title=line['Title'],
                         description=line['Description'], duration=line['Duration'], genres=line['Genre'],
                         rating=line['Rating'], metascore=line['Metascore'], votes=line['Votes'],
-                        gross_earning_in_mil=line['Gross_Earning_in_Mil'], director=line['Director'],
+                        gross_earning_in_mil=line['Gross_Earning_in_Mil'], director=director_nm,
                         actor=line['Actor'])
 
             tmp.save()
@@ -57,10 +82,6 @@ def movie(request):
     movies = paginator.get_page(page)
 
     return render(request, "movie.html", {'Movie': movies})
-
-
-def director(request):
-    return render(request, "director.html", {})
 
 
 def actor(request):
