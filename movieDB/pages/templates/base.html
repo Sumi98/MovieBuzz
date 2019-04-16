@@ -12,7 +12,7 @@
     <title>{% block title %}movieDB{% endblock %}</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: honeydew">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightyellow">
         <span class="navbar-brand">MovieDB</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,15 +38,21 @@
                     <a class="nav-link" href="{% url 'recommendation' %}">Recommendation</a>
                 </li>
             </ul>
+            <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'search' %}">
+                <input class="form-control mr-sm-2" type="text" name="q" value="{{ request.GET.q }}" placeholder="Search movie title..." aria-label="Search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
     </nav>
     {% block content %}
     {% endblock %}
-    <br/><br/>
-    <div class="mx-auto" align="center">
-        <small>Copyright &copy; CrazyPoorAsian - All Rights Reserved</small><br/>
-        <img src="{% static 'images/UIUC.jpg' %}" style="width: 200px; height: auto">
-    </div>
+    <footer class="site-footer">
+        <div class="mx-auto" align="center">
+            <p class="font-weight-bold">Copyright &copy; CrazyPoorAsian - All Rights Reserved</p>
+            <img src="{% static 'images/UIUC.jpg' %}" style="width: 200px; height: auto">
+        </div>
+    </footer>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

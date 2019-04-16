@@ -1,10 +1,16 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}
 Welcome To Our Movie Database!
 {% endblock %}
 
 {% block content %}
+    <style>
+        body {
+            background: mintcream url("{% static 'images/hompage.jpg' %}") ;
+        }
+    </style>
     {% if filter_title %}
         <style>
             th{
@@ -56,13 +62,5 @@ Welcome To Our Movie Database!
             {% endfor %}
             </tbody>
         </table>
-    {% else %}
-        <br/>
-        <form method="GET" action="{% url 'search' %}">
-            <div class="form-group" align="center">
-                <input type="text" name="q" value="{{ request.GET.q }}" placeholder="Search from movie title...">
-                <button class="btn btn-primary" type="submit">Search</button>
-            </div>
-        </form>
     {% endif %}
 {% endblock %}
