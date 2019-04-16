@@ -51,7 +51,6 @@ def director(request):
     return render(request, "director.html", {'Director': all_director})
 
 
-
 def movie(request):
     base_dir = os.path.abspath(__file__)
 
@@ -108,7 +107,8 @@ def insert_data_submission(request):
     director_name = request.POST["director"]
     actor_name = request.POST.get("actor", False)
 
-    new_movie = Movie(title=title, year=year, genres=genres, description=descrption, director=director_name, actor=actor_name)
+    new_movie = Movie(title=title, year=year, genres=genres, description=descrption, director=director_name,
+                      actor=actor_name)
     new_movie.save()
     return render(request, "insert_data.html", {})
 
@@ -165,12 +165,12 @@ def delete_movie(request, pk):
 
 
 def search(request):
-
-
     template = 'home.html'
 
     query = request.GET.get('q')
+    tep = "%%%s%%" % query
+    filter_title = Director.objects.raw(
+        "SELECT m.title AS title, d.name AS name, d.masterpiece AS knownfor FROM pages_director AS d LEFT JOIN movie_0325 AS m ON d.name = m.director WHERE m.title LIKE %s",
+        [tep])
 
-    filter_title = Movie.objects.filter(title__contains=query)
-
-    return render(request, template, {'filter_title':filter_title})
+    return render(request, template, {'filter_title': filter_title})
