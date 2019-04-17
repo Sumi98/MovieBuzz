@@ -85,19 +85,19 @@ def actor(request):
     with open(base_dir + '/Data/star.csv') as g:
         reader = csv.DictReader(g)
         for line in reader:
-            # try:
-            #     val = int(line['dr_awards_wins'])
-            # except ValueError:
-            #     val = None
+            try:
+                val = int(line['st_awards_wins'])
+            except ValueError:
+                val = None
 
-            # try:
-            #     val_nom = int(line['dr_awards_nomi tions'])
-            # except ValueError:
-            #     val_nom = None
+            try:
+                val_nom = int(line['st_awards_nominations'])
+            except ValueError:
+                val_nom = None
 
             tmp = Actor(name=line['st_name'], date=line['st_date'], place=line['st_place'],
-                           masterpiece=line['st_knownfor'], award_win=line['st_awards_wins'],
-                           award_nom=line['st_awards_nominations'])
+                           masterpiece=line['st_knownfor'], award_win=val,
+                           award_nom=val_nom)
 
             tmp.save()
 
