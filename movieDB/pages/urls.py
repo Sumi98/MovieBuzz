@@ -16,4 +16,6 @@ urlpatterns = [
     url(r'^edit_movie/(?P<pk>\d+)/$', views.edit_movie, name='edit_movie'),
     url(r'^delete_movie/(?P<pk>\d+)/$', views.delete_movie, name='delete_movie'),
     url(r'^result/$', views.search, name='search'),
+    # url(r'^movie_detail/(?P<id>\d+)/$', views.detail, name='movie_detail'),
+    url(r'^recommedation/$', views.search, name='search'),
 ]
