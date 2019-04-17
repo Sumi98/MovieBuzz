@@ -55,7 +55,7 @@ All movies
             <td align="center"> {{ movie.metascore }}</td>
             <td align="center"> {{ movie.votes }}</td>
             <td align="center"> {{ movie.gross_earning_in_mil }}</td>
-            <td> {{ movie.director }}</td>
+            <td> {{ movie.director.name }}</td>
             <td> {{ movie.actor }}</td>
             <td><a href="{% url 'edit_movie' pk=movie.movieid %}"><button class="btn btn-warning">Edit</button></a></td>
             <td><a href="{% url 'delete_movie' pk=movie.movieid %}"><button class="btn btn-danger">Delete</button></a></td>

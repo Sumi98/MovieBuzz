@@ -42,8 +42,19 @@ def director(request):
     with open(base_dir + '/Data/director.csv') as g:
         reader = csv.DictReader(g)
         for line in reader:
+            try:
+                val = int(line['dr_awards_wins'])
+            except ValueError:
+                val = None
+
+            try:
+                val_nom = int(line['dr_awards_nomi tions'])
+            except:
+                val_nom = None
+
             tmp = Director(name=line['dr_name'], date=line['dr_date'], place=line['dr_place'],
-                           masterpiece=line['dr_knownfor'])
+                           masterpiece=line['dr_knownfor'], award_win=val,
+                           award_nom=val_nom)
 
             tmp.save()
 

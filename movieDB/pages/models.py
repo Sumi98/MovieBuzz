@@ -24,3 +24,5 @@ class Director(models.Model):
     date = models.CharField(max_length=100, null=True)
     place = models.CharField(max_length=500, null=True)
     masterpiece = models.CharField(max_length=500, null=True)
+    award_win = models.IntegerField(blank=True, null=True, default=None)
+    award_nom = models.IntegerField(blank=True, null=True, default=None)
