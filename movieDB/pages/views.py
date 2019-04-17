@@ -9,6 +9,15 @@ from django.core.paginator import Paginator
 def home(request):
     return render(request, "home.html", {})
 
+def clean_string_list(stringa):
+    """Utility function, for better format in 'masterpiece' column
+    clean "['Enter the Void', 'Druid Peak', 'Blinders', 'Boys on Film X']" into 
+    'Enter the Void, Druid Peak, Blinders, Boys on Film X'
+    """
+    bad_chars = "[]\"\"\'\'"
+    for c in bad_chars: 
+        stringa = stringa.replace(c, "")
+    return stringa
 
 def director(request):
     base_dir = os.path.abspath(__file__)
@@ -104,7 +113,7 @@ def actor(request):
             tmp = Actor(name = line['st_name'].rstrip(), 
                         date = line['st_date'], 
                         place = line['st_place'], 
-                        masterpiece = line['st_knownfor'], 
+                        masterpiece = clean_string_list(line['st_knownfor']), 
                         award_win = val, 
                         award_nom = val_nom, 
                         person_link = line['st_link'], 
@@ -208,3 +217,6 @@ def search(request):
         [tep])
 
     return render(request, template, {'filter_title': filter_title})
+
+
+

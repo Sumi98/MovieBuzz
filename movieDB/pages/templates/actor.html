@@ -34,7 +34,7 @@ Main Actors
         </thead>
         {% for ac in Actor %}
         <tr>
-            <th scope="row"> {{ ac.name }}</th>
+        	<th scope="row"><a href="{{ ac.person_link }}" target="_blank">{{ ac.name }} <span class="glyphicon glyphicon-new-window"></span></a></th>
             <td align="center"> {{ ac.date }}</td>
             <td align="center"> {{ ac.place }}</td>
             <td align="center"> {{ ac.masterpiece }}</td>
