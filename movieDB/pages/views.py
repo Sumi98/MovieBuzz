@@ -118,7 +118,7 @@ def actor(request):
 
             # .rstrip() is added to remove '\n'
             # strip(' ') for 'st_name' since some names may have a space the the begining
-            tmp = Actor(name = line['st_name'].rstrip().strip(' '), 
+            tmp = Actor(name = line['st_name'],
                         date = line['st_date'], 
                         place = line['st_place'], 
                         masterpiece = clean_string_list(line['st_knownfor']), 

@@ -2,105 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d52431cf-205d-42d5-97f6-a7525021b691" name="Default Changelist" comment="ellipsis">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/300: Rise of an Empire.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Abraham Lincoln: Vampire Hunter.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Alien: Covenant.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Alvin and the Chipmunks: The Squeakquel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Annabelle: Creation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Avengers: Age of Ultron.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Avengers: Infinity War.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Batman v Superman: Dawn of Justice.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Captain America: Civil War.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Captain America: The First Avenger.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Captain America: The Winter Soldier.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Dragonball: Evolution.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Exodus: Gods and Kings.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Fantastic Beasts: The Crimes of Grindelwald.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/G.I. Joe: Retaliation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/G.I. Joe: The Rise of Cobra.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Hachi: A Dog's Tale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Hansel &amp; Gretel: Witch Hunters.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Harry Potter and the Deathly Hallows: Part 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Harry Potter and the Deathly Hallows: Part 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Hellboy II: The Golden Army.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Hotel Transylvania 3: Summer Vacation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Independence Day: Resurgence.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Jack Reacher: Never Go Back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Jack Ryan: Shadow Recruit.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/John Wick: Chapter 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Journey 2: The Mysterious Island.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Jumanji: Welcome to the Jungle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Jurassic World: Fallen Kingdom.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Kill Bill: The Whole Bloody Affair.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/King Arthur: Legend of the Sword.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Kingsman: The Golden Circle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Kingsman: The Secret Service.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Kong: Skull Island.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Mad Max: Fury Road.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Madagascar: Escape 2 Africa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Maze Runner: The Scorch Trials.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Mechanic: Resurrection.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Mission: Impossible - Fallout.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Mission: Impossible - Ghost Protocol.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Mission: Impossible - Rogue Nation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Night at the Museum: Battle of the Smithsonian.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Night at the Museum: Secret of the Tomb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Nymphomaniac: Vol. I.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Nymphomaniac: Vol. II.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Percy Jackson &amp; the Olympians: The Lightning Thief.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Percy Jackson: Sea of Monsters.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Pirates of the Caribbean: Dead Men Tell No Tales.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Pirates of the Caribbean: On Stranger Tides.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Prince of Persia: The Sands of Time.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Punisher: War Zone.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Resident Evil: Afterlife.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Resident Evil: Retribution.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Resident Evil: The Final Chapter.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Sherlock Holmes: A Game of Shadows.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Sicario: Day of the Soldado.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Sin City: A Dame to Kill For.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Solo: A Star Wars Story.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Spider-Man: Homecoming.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Spider-Man: Into the Spider-Verse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Spy Kids 4: All the Time in the World.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Star Wars: Episode VII - The Force Awakens.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Star Wars: Episode VIII - The Last Jedi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Teenage Mutant Ninja Turtles: Out of the Shadows.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Boondock Saints II: All Saints Day.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Chronicles of Narnia: Prince Caspian.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Chronicles of Narnia: The Voyage of the Dawn Treader.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hobbit: An Unexpected Journey.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hobbit: The Battle of the Five Armies.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hobbit: The Desolation of Smaug.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hunger Games: Catching Fire.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hunger Games: Mockingjay - Part 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hunger Games: Mockingjay - Part 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Huntsman: Winter's War.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Mortal Instruments: City of Bones.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Mummy: Tomb of the Dragon Emperor.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Purge: Anarchy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Purge: Election Year.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Raid: Redemption.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Twilight Saga: Breaking Dawn - Part 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Twilight Saga: Breaking Dawn - Part 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Twilight Saga: Eclipse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Twilight Saga: New Moon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The VVitch: A New-England Folktale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Thor: Ragnarok.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Thor: The Dark World.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Transformers: Age of Extinction.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Transformers: Dark of the Moon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Transformers: Revenge of the Fallen.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Transformers: The Last Knight.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Underworld: Blood Wars.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Underworld: Rise of the Lycans.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/X-Men Origins: Wolverine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/X-Men: Apocalypse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/X-Men: Days of Future Past.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/X: First Class.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/star.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/star.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movieDB/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movieDB/pages/templates/recommendation.html" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/pages/templates/recommendation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movieDB/pages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/pages/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,28 +32,7 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="pages_director: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="pages_movie: table" type="ffe0bd85:SqliteImplModel$Table" />
+        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
@@ -207,12 +92,12 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="8" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="5" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -231,29 +116,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="3" />
+          <entry key="csv" value="4" />
           <entry key="html" value="26" />
           <entry key="jpg" value="1" />
-          <entry key="py" value="7" />
+          <entry key="py" value="8" />
+          <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="3" />
+          <entry key="CSV" value="4" />
           <entry key="HTML" value="26" />
           <entry key="Image" value="1" />
-          <entry key="Python" value="7" />
+          <entry key="Python" value="8" />
+          <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/movieDB/pages/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="221" column="23" selection-start-line="221" selection-start-column="23" selection-end-line="221" selection-end-column="23" />
+            <state relative-caret-position="398">
+              <caret line="112" selection-start-line="112" selection-end-line="112" />
             </state>
           </provider>
         </entry>
@@ -261,7 +148,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movieDB/pages/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="465">
               <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
             </state>
           </provider>
@@ -270,7 +157,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movieDB/pages/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="210">
               <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
             </state>
           </provider>
@@ -279,7 +166,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movieDB/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="150">
               <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
             </state>
           </provider>
@@ -288,8 +175,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/movie.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="25" column="79" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="79" />
+            <state relative-caret-position="375">
+              <caret line="25" column="79" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -297,25 +184,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-280">
+            <state relative-caret-position="165">
               <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/recommendation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="53" column="85" selection-start-line="53" selection-start-column="85" selection-end-line="53" selection-end-column="85" />
-              <folding>
-                <element signature="n#style#0;n#h5#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#3;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#5;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#6;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="599">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
@@ -323,7 +202,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movieDB/movieDB/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
+            <state relative-caret-position="1845">
               <caret line="123" column="1" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
             </state>
           </provider>
@@ -332,7 +211,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="195">
               <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
             </state>
           </provider>
@@ -374,8 +253,8 @@
         <option value="$PROJECT_DIR$/movieDB/pages/templates/actor.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/prediction.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/movie.html" />
-        <option value="$PROJECT_DIR$/movieDB/pages/views.py" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/recommendation.html" />
+        <option value="$PROJECT_DIR$/movieDB/pages/views.py" />
       </list>
     </option>
   </component>
@@ -385,11 +264,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="134" />
-    <option name="y" value="24" />
-    <option name="width" value="1274" />
-    <option name="height" value="824" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -424,13 +302,6 @@
               <item name="CS411_Project" type="462c0819:PsiDirectoryNode" />
               <item name="movieDB" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CS411_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS411_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="movieDB" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CS411_Project" type="b2602c69:ProjectViewProjectNode" />
@@ -560,10 +431,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1904762" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19313304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -576,16 +447,16 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011338" side_tool="true" weight="0.33289126" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49828473" weight="0.3237705" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49962208" weight="0.32891247" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5028612" side_tool="true" weight="0.32336956" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49713877" weight="0.32380953" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4985694" weight="0.32880434" />
       <window_info active="true" anchor="bottom" id="manage.py@CS411_Project" order="13" sideWeight="0.4988662" visible="true" weight="0.33289126" />
       <window_info anchor="bottom" id="Database Console" order="14" sideWeight="0.49962208" weight="0.32891247" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32879817" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32761088" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" weight="0.19123206" />
@@ -674,7 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/star.csv" />
     <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/prediction.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -696,81 +566,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://bf2702e7-3c00-4f18-9616-d009d9e6ec3d/schema/main/table/pages_movie">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="das://bf2702e7-3c00-4f18-9616-d009d9e6ec3d/schema/main/table/pages_movie" />
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="150">
           <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/movie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="79" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/movieDB/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
+        <state relative-caret-position="1845">
           <caret line="123" column="1" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="195">
           <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="221" column="23" selection-start-line="221" selection-start-column="23" selection-end-line="221" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/movie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="25" column="79" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/recommendation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="53" column="85" selection-start-line="53" selection-start-column="85" selection-end-line="53" selection-end-column="85" />
-          <folding>
-            <element signature="n#style#0;n#h5#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#5;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#6;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="599">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/star.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/regressionModel.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a4e059d0-1882-413d-8025-717e8df53902/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
         </state>
       </provider>
     </entry>
