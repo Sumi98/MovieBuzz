@@ -95,9 +95,20 @@ def actor(request):
             except ValueError:
                 val_nom = None
 
-            tmp = Actor(name=line['st_name'], date=line['st_date'], place=line['st_place'],
-                           masterpiece=line['st_knownfor'], award_win=val,
-                           award_nom=val_nom)
+            try:
+                per_link = line['st_link']
+            except OperationalError:
+                per_link = None
+
+            # .rstrip() is added to remove '\n'
+            tmp = Actor(name = line['st_name'].rstrip(), 
+                        date = line['st_date'], 
+                        place = line['st_place'], 
+                        masterpiece = line['st_knownfor'], 
+                        award_win = val, 
+                        award_nom = val_nom, 
+                        person_link = line['st_link'], 
+                        award_link = line['st_awards_link'])
 
             tmp.save()
 
