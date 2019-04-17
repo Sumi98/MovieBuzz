@@ -80,10 +80,38 @@ def movie(request):
             except Actor.DoesNotExist:
                 act_nm = None
 
-            tmp = Movie(movieid=line['Movie_ID'], year=line['Year'], rank=line['Rank'], title=line['Title'],
-                        description=line['Description'], duration=line['Duration'], genres=line['Genre'],
-                        rating=line['Rating'], metascore=line['Metascore'], votes=line['Votes'],
-                        gross_earning_in_mil=line['Gross_Earning_in_Mil'], director=director_nm,
+            try:
+                rate = float(line['Rating'])
+            except ValueError:
+                rate = 0
+
+            try:
+                score = int(line['Metascore'])
+            except ValueError:
+                score = 0
+
+            try:
+                vote_num = int(line['Votes'])
+            except ValueError:
+                vote_num = 0
+
+            try:
+                earned = float(line['Gross_Earning_in_Mil'])
+            except ValueError:
+                earned = 0
+
+            tmp = Movie(movieid=line['Movie_ID'], 
+                        year=line['Year'], 
+                        rank=line['Rank'], 
+                        title=line['Title'],
+                        description=line['Description'], 
+                        duration=line['Duration'], 
+                        genres=line['Genre'],
+                        rating=rate, 
+                        metascore=score, 
+                        votes=vote_num,
+                        gross_earning_in_mil=earned, 
+                        director=director_nm,
                         actor=act_nm)
 
             tmp.save()
