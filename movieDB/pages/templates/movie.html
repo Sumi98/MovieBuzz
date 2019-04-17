@@ -1,13 +1,16 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}
-All movies
+
 {% endblock %}
 
 {% block content %}
-<br/><br/>
 <head>
 <style>
+    body {
+        background: mintcream url("{% static 'images/hompage.jpg' %}") ;
+    }
     th{
         max-width: 200px;
         text-align: center;

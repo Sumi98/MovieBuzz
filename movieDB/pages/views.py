@@ -214,7 +214,7 @@ def delete_movie(request, pk):
 
 
 def search(request):
-    template = 'home.html'
+    template = 'recommendation.html'
 
     query = request.GET.get('q')
     tep = "%%%s%%" % query

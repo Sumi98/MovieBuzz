@@ -1,10 +1,49 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}
-Welcome To Our Movie Database!
+
 {% endblock %}
 
 {% block content %}
-<br/> <br/>
-Movies suits for you - @ TODO in next stages
+    <head>
+        <style>
+            body {
+                background: mintcream url("{% static 'images/hompage.jpg' %}") ;
+            }
+         </style>
+    </head>
+
+``  {% if filter_title %}
+        <style>
+            th{
+                max-width: 80px;
+                text-align: left;
+            }
+            td{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 80px;
+            }
+        </style>
+        <table class="table table-hover table-sm">
+            <thead class="thead-light" data-file-width="5px">
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Director</th>
+                <th scope="col">Known For</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for movie in filter_title %}
+                <tr>
+                    <th scope="row"> {{ movie.title }}</th>
+                    <td> {{ movie.name }}</td>
+                    <td> {{ movie.knownfor }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
 {% endblock %}
