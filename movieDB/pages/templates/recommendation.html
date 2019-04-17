@@ -14,7 +14,7 @@
          </style>
     </head>
 
-``  {% if filter_title %}
+  {% if filter_title %}
         <style>
             th{
                 max-width: 80px;
@@ -45,5 +45,16 @@
             {% endfor %}
             </tbody>
         </table>
+    {% else %}
+        <div class="container" align="center">
+              <h3 style="color: red">Oops! It's new to us!</h3><br>
+              <h3 style="color: orange">Oops! It's new to us!</h3><br>
+              <h3 style="color: yellow">Oops! It's new to us!</h3><br>
+              <h3 style="color: green">Oops! It's new to us!</h3><br>
+              <a href="{% url 'insert_data' %}"><h3>Let's add a new one!</h3></a><br>
+              <h3 style="color: indigo">Oops! It's new to us!</h3><br>
+              <h3 style="color: purple">Oops! It's new to us!</h3><br>
+
+        </div>
     {% endif %}
 {% endblock %}
