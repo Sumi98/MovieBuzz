@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d52431cf-205d-42d5-97f6-a7525021b691" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/director.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/director.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movieDB/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movieDB/pages/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/pages/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movieDB/pages/templates/director.html" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/pages/templates/director.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movieDB/pages/templates/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/pages/templates/movie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movieDB/pages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/pages/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,43 +87,43 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1045" />
-          <entry key="py" value="856" />
-          <entry key="txt" value="173" />
+          <entry key="html" value="1100" />
+          <entry key="py" value="912" />
+          <entry key="txt" value="190" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1045" />
-          <entry key="PLAIN_TEXT" value="173" />
-          <entry key="Python" value="856" />
+          <entry key="HTML" value="1100" />
+          <entry key="PLAIN_TEXT" value="190" />
+          <entry key="Python" value="912" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="1" />
-          <entry key="html" value="11" />
+          <entry key="csv" value="2" />
+          <entry key="html" value="14" />
           <entry key="jpg" value="1" />
-          <entry key="py" value="3" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="1" />
-          <entry key="HTML" value="11" />
+          <entry key="CSV" value="2" />
+          <entry key="HTML" value="14" />
           <entry key="Image" value="1" />
-          <entry key="Python" value="3" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movieDB/pages/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="75" column="73" selection-start-line="75" selection-start-column="73" selection-end-line="75" selection-end-column="73" />
+            <state relative-caret-position="-12">
+              <caret line="52" column="12" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -135,52 +132,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/director.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state>
-              <caret column="57" selection-start-column="57" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movieDB/pages/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/movie.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="758">
-              <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+            <state relative-caret-position="170">
+              <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/base.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/director.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="56" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movieDB/pages/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="27" column="71" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
+            <state relative-caret-position="358">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
         </entry>
@@ -210,15 +174,15 @@
         <option value="$PROJECT_DIR$/movieDB/movieDB/settings.py" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/delete_data.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/forms.py" />
-        <option value="$PROJECT_DIR$/movieDB/pages/models.py" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/new_movie.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/insert_data.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/movie.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/urls.py" />
-        <option value="$PROJECT_DIR$/movieDB/pages/views.py" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/footer.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/home.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/base.html" />
+        <option value="$PROJECT_DIR$/movieDB/pages/models.py" />
+        <option value="$PROJECT_DIR$/movieDB/pages/views.py" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/director.html" />
       </list>
     </option>
@@ -229,10 +193,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="828" />
+    <option name="width" value="1407" />
+    <option name="height" value="824" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -505,13 +469,20 @@
       <option name="project" value="LOCAL" />
       <updated>1555442184306</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="revise view.py, model.py">
+      <created>1555459441674</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1555459441674</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="824" extended-state="0" />
+    <frame x="0" y="23" width="1407" height="824" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2167382" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21611722" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -525,7 +496,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50171524" side_tool="true" weight="0.32863188" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49828473" visible="true" weight="0.3237705" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49828473" visible="true" weight="0.3237705" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32891247" />
       <window_info anchor="bottom" id="manage.py@CS411_Project" order="13" visible="true" weight="0.33289126" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -572,7 +543,8 @@
     <MESSAGE value="revise view.py, movie.html" />
     <MESSAGE value="movie.html UI upgrade" />
     <MESSAGE value="revise database, admin, models, views.py and director, movie.html and director.csv" />
-    <option name="LAST_COMMIT_MESSAGE" value="revise database, admin, models, views.py and director, movie.html and director.csv" />
+    <MESSAGE value="revise view.py, model.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="revise view.py, model.py" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/movieDB/static/images/UIUC.jpg">
@@ -639,6 +611,12 @@
     <entry file="file://$PROJECT_DIR$/Data/img/300: Rise of an Empire.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Data/star.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Data/director.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -646,6 +624,16 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state>
           <caret column="57" selection-start-column="57" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="56" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -659,44 +647,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/movie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/pages/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="27" column="71" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/director.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="56" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="56" />
+        <state relative-caret-position="420">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <marker date="1555460150000" expanded="true" signature="1246:1247" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/pages/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="75" column="73" selection-start-line="75" selection-start-column="73" selection-end-line="75" selection-end-column="73" />
+        <state relative-caret-position="-12">
+          <caret line="52" column="12" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/movie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/director.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>

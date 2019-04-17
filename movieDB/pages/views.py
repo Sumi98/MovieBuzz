@@ -49,7 +49,7 @@ def director(request):
 
             try:
                 val_nom = int(line['dr_awards_nomi tions'])
-            except:
+            except ValueError:
                 val_nom = None
 
             tmp = Director(name=line['dr_name'], date=line['dr_date'], place=line['dr_place'],
@@ -59,7 +59,12 @@ def director(request):
             tmp.save()
 
     all_director = Director.objects.all()
-    return render(request, "director.html", {'Director': all_director})
+
+    paginator = Paginator(all_director, 50)
+    page = request.GET.get('page')
+    directors = paginator.get_page(page)
+
+    return render(request, "director.html", {'Director': directors})
 
 
 def movie(request):
