@@ -47,7 +47,9 @@ All movies
             <th scope="row"> {{ movie.movieid }}</th>
             <td> {{ movie.year }}</td>
             <td align="center"> {{ movie.rank }}</td>
-            <td> {{ movie.title }}</td>
+<!--             <td> {{ movie.title }}</td> -->
+            <td> <a href="/movie/movie_detail/{{ movie.movieid }}"
+                target="_self">{{ movie.title }}</a></td>
             <td> {{ movie.description }}</td>
             <td align="center"> {{ movie.duration }}</td>
             <td> {{ movie.genres }}</td>
