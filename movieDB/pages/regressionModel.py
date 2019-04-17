@@ -1,8 +1,8 @@
-from .model import Movie, Director, Actor
-import numpy as np
+# from .model import Movie, Director, Actor
+# import numpy as np
 
-def build_lg_model():
-	pass
+# def build_lg_model():
+# 	pass
 
-def prediction_box_office():
-	pass
+# def prediction_box_office():
+# 	pass
