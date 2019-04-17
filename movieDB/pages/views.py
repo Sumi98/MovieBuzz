@@ -10,8 +10,8 @@ def home(request):
     return render(request, "home.html", {})
 
 def clean_string_list(stringa):
-    """Utility function, for better format in 'masterpiece' column
-    clean "['Enter the Void', 'Druid Peak', 'Blinders', 'Boys on Film X']" into 
+    """Utility function, to improve formatting in 'masterpiece' column.
+    Change "['Enter the Void', 'Druid Peak', 'Blinders', 'Boys on Film X']" into 
     'Enter the Void, Druid Peak, Blinders, Boys on Film X'
     """
     bad_chars = "[]\"\"\'\'"
@@ -38,8 +38,11 @@ def director(request):
             except ValueError:
                 val_nom = None
 
-            tmp = Director(name=line['dr_name'], date=line['dr_date'], place=line['dr_place'],
-                           masterpiece=line['dr_knownfor'], award_win=val,
+            tmp = Director(name=line['dr_name'], 
+                           date=line['dr_date'], 
+                           place=line['dr_place'],
+                           masterpiece=clean_string_list(line['dr_knownfor']), 
+                           award_win=val,
                            award_nom=val_nom)
 
             tmp.save()
@@ -123,7 +126,7 @@ def actor(request):
 
     all_actor = Actor.objects.all()
 
-    paginator = Paginator(all_actor, 50)
+    paginator = Paginator(all_actor, 30)
     page = request.GET.get('page')
     actors = paginator.get_page(page)
 

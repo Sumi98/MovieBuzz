@@ -26,20 +26,20 @@ Directors
             <tr>
                 <th scope="col">Name</th>
                 <th scope="col">Date</th>
-                <th scope="col">Place</th>
-                <th scope="col">Masterpiece</th>
+                <th scope="col">Masterpieces</th>
                 <th scope="col">Awards_wins</th>
                 <th scope="col">Award_nomination</th>
+                <th scope="col">Location</th>
             </tr>
         </thead>
         {% for dr in Director %}
         <tr>
             <th scope="row"> {{ dr.name }}</th>
             <td align="center"> {{ dr.date }}</td>
-            <td align="center"> {{ dr.place }}</td>
             <td align="center"> {{ dr.masterpiece }}</td>
             <td align="center"> {{ dr.award_win }}</td>
             <td align="center"> {{ dr.award_nom }}</td>
+            <td align="center"> {{ dr.place }}</td>
 
         </tr>
         {% endfor %}

@@ -26,20 +26,20 @@ Main Actors
             <tr>
                 <th scope="col">Name</th>
                 <th scope="col">Date</th>
-                <th scope="col">Place</th>
-                <th scope="col">Masterpiece</th>
+                <th scope="col">Masterpieces</th>
                 <th scope="col">Awards_wins</th>
                 <th scope="col">Award_nomination</th>
+                <th scope="col">Location</th>
             </tr>
         </thead>
         {% for ac in Actor %}
         <tr>
-        	<th scope="row"><a href="{{ ac.person_link }}" target="_blank">{{ ac.name }} <span class="glyphicon glyphicon-new-window"></span></a></th>
-            <td align="center"> {{ ac.date }}</td>
-            <td align="center"> {{ ac.place }}</td>
-            <td align="center"> {{ ac.masterpiece }}</td>
-            <td align="center"> {{ ac.award_win }}</td>
+        	<th scope="row" ><a href="{{ ac.person_link }}" target="_blank">{{ ac.name }} <span class="glyphicon glyphicon-new-window"></span></a></th>
+            <td align="left"> {{ ac.date }}</td>
+            <td align="left" width="50%"> {{ ac.masterpiece }}</td>
+            <td align="center"> <a href="{{ ac.award_link }}" target="_blank">{{ ac.award_win }} <span class="glyphicon glyphicon-new-window"></span></a></td>
             <td align="center"> {{ ac.award_nom }}</td>
+            <td align="left"> {{ ac.place }}</td>
 
         </tr>
         {% endfor %}
