@@ -225,4 +225,38 @@ def search(request):
     return render(request, template, {'filter_title': filter_title})
 
 
+def detail(request, id=None):
+    movie= get_object_or_404(Movie, id=id)
+    # items = []
+    # try:
+    #     if model.get_name() == 'movie' and id != 'None':
+    #         label = 'actor'
+    #         object = model.objects.get(movieid=id)
+    #         records = Act.objects.filter(movieid_id=id)
+    #         if request.user.get_username() != '':
+    #             seen_list = [str(x).split('|')[1] for x in
+    #                          Seen.objects.filter(username=request.user.get_username())]
+    #             expect_list = [str(y).split('|')[1] for y in
+    #                            Expect.objects.filter(username=request.user.get_username())]
+    #             if id in seen_list:
+    #                 object.flag = 1
+    #             if id in expect_list:
+    #                 object.flag = 2
+    #         for query in records:
+    #             for actor in Actor.objects.filter(actorid=query.actorid_id):
+    #                 items.append(actor)
+    #     if model.get_name() == 'actor':
+    #         label = 'movie'
+    #         object = model.objects.get(actorid=id)
+    #         records = Act.objects.filter(actorid_id=id)
+    #         for query in records:
+    #             for movie in Movie.objects.filter(movieid=query.movieid_id):
+    #                 items.append(movie)
+    # except:
+    #     return render(request, '404.html')
+    # return render(request, '{}_list.html'.format(label), {'items': items, 'number': len(items), 'object': object})
+    return render(request, 'movie_list.html', {'movie': movie,})
+
+
+
 
