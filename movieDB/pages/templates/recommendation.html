@@ -32,7 +32,8 @@
             <tr>
                 <th scope="col">Title</th>
                 <th scope="col">Director</th>
-                <th scope="col">Known For</th>
+                <th scope="col">Actor</th>
+                <th scope="col">Max</th>
             </tr>
             </thead>
             <tbody>
@@ -40,11 +41,18 @@
                 <tr>
                     <th scope="row"> {{ movie.title }}</th>
                     <td> {{ movie.name }}</td>
-                    <td> {{ movie.knownfor }}</td>
+                    <td> {{ movie.star }}</td>
+                    <td> {{ filter_title.name }}</td>
                 </tr>
             {% endfor %}
+            <!-- {% for max in data_max %} -->
+
+                <td> {{ data_max}}</td>
+
+            <!-- {% endfor %} -->
             </tbody>
         </table>
+            <h3>{{ filter_title.name }}</h3><br>
     {% else %}
         <div class="container" align="center">
               <h3 style="color: red">Oops! It's new to us!</h3><br>
@@ -56,5 +64,7 @@
               <h3 style="color: purple">Oops! It's new to us!</h3><br>
 
         </div>
+            
+
     {% endif %}
 {% endblock %}

@@ -1,8 +1,9 @@
 from django.contrib import messages
 from django.shortcuts import render, get_object_or_404
-from django.db.models import Q
+from django.db.models import Q, Max
 from .models import Movie, Director, Actor
 from .regressionModel import build_lg_model, prediction_box_office
+
 
 import csv, os
 from .forms import MovieForm
@@ -250,10 +251,24 @@ def search(request):
     query = request.GET.get('q')
     tep = "%%%s%%" % query
     filter_title = Director.objects.raw(
-        "SELECT m.title AS title, d.name AS name, d.masterpiece AS knownfor FROM pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id WHERE m.title LIKE %s",
-        [tep])
-
-    return render(request, template, {'filter_title': filter_title})
+        "SELECT m.title AS title, d.name AS name, a.name AS star \
+        FROM ((pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id) LEFT JOIN pages_actor AS a ON a.name = m.actor_id) \
+        WHERE m.title LIKE %s", [tep])[:1]
+    # filter_title = Actor.objects.raw(
+    #     "SELECT m.title AS title, a.name AS name, a.masterpiece AS knownfor FROM pages_actor AS a LEFT JOIN pages_movie AS m ON a.name = m.actor_id WHERE m.title LIKE %s",
+    #     [tep])
+    limit_tuple = Movie.objects.raw(
+        "SELECT m.title AS title, m.rating AS rating, m.metascore AS metoscore, \
+        m.votes AS votes, m.gross_earning_in_mil AS gross, d.name AS name \
+        FROM pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id WHERE m.title LIKE %s LIMIT 1",[tep])
+    win_data = Director.objects.raw("SELECT d.name AS name, MAX(d.award_win) AS win_max, MIN(d.award_win) AS win_min FROM pages_director AS d")
+    nom_data = Director.objects.raw("SELECT d.name AS name, MAX(d.award_nom) AS win_nom, MIN(d.award_nom) AS win_nom FROM pages_director AS d")
+    # data_max = Movie.objects.all().aggregate(Max('rating'))
+    context = {
+        'filter_title': filter_title,
+        # 'data_max': data_max
+    }
+    return render(request, template, context)
 
 
 # def detail(request, id=None):
