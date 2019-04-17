@@ -43,7 +43,9 @@ def director(request):
                            place=line['dr_place'],
                            masterpiece=clean_string_list(line['dr_knownfor']), 
                            award_win=val,
-                           award_nom=val_nom)
+                           award_nom=val_nom, 
+                           person_link = line['dr_link'], 
+                           award_link = line['dr_awards_link'])
 
             tmp.save()
 
@@ -126,7 +128,7 @@ def actor(request):
 
     all_actor = Actor.objects.all()
 
-    paginator = Paginator(all_actor, 30)
+    paginator = Paginator(all_actor, 50)
     page = request.GET.get('page')
     actors = paginator.get_page(page)
 

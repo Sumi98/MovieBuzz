@@ -34,10 +34,10 @@ Directors
         </thead>
         {% for dr in Director %}
         <tr>
-            <th scope="row"> {{ dr.name }}</th>
+            <th scope="row" ><a href="{{ dr.person_link }}" target="_blank">{{ dr.name }} <span class="glyphicon glyphicon-new-window"></span></a></th>
             <td align="center"> {{ dr.date }}</td>
             <td align="center"> {{ dr.masterpiece }}</td>
-            <td align="center"> {{ dr.award_win }}</td>
+            <td align="center"> <a href="{{ dr.award_link }}" target="_blank">{{ dr.award_win }} <span class="glyphicon glyphicon-new-window"></span></a></td>
             <td align="center"> {{ dr.award_nom }}</td>
             <td align="center"> {{ dr.place }}</td>
 
