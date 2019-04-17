@@ -2,6 +2,8 @@ from django.contrib import messages
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
 from .models import Movie, Director, Actor
+# from .regressionModel import build_lg_model, prediction_box_office
+
 import csv, os
 from .forms import MovieForm
 from django.core.paginator import Paginator
@@ -137,7 +139,8 @@ def actor(request):
 
 
 def prediction(request):
-    return render(request, "prediction.html", {})
+    template = "prediction.html"
+    return render(request, template, {})
 
 
 def recommendation(request):
@@ -219,7 +222,7 @@ def search(request):
     query = request.GET.get('q')
     tep = "%%%s%%" % query
     filter_title = Director.objects.raw(
-        "SELECT m.title AS title, d.name AS name, d.masterpiece AS knownfor FROM pages_director AS d LEFT JOIN movie_0325 AS m ON d.name = m.director WHERE m.title LIKE %s",
+        "SELECT m.title AS title, d.name AS name, d.masterpiece AS knownfor FROM pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id WHERE m.title LIKE %s",
         [tep])
 
     return render(request, template, {'filter_title': filter_title})
