@@ -18,7 +18,6 @@ class Movie(models.Model):
     director = models.ForeignKey('Director', related_name='+', on_delete=models.CASCADE, null=True, blank=True)
     actor = models.CharField(max_length=30)
 
-
 class Director(models.Model):
     name = models.CharField(max_length=100, primary_key=True)
     date = models.CharField(max_length=100, null=True)

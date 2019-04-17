@@ -4,9 +4,74 @@
 Main Actors
 {% endblock %}
 
-{#{% block content %}#}
-{#<a href="{% url 'home' %}">Home</a> | <a href="{% url 'movie' %}">Movies</a> | <a href="{% url 'director' %}"> Directors</a>| <a href="{% url 'actor' %}"> Actors</a> |<a href="{% url 'prediction' %}">Predictions</a> |<a href="{% url 'recommendation' %}">Movie Recommendations</a>#}
-{##}
-{#<br/> <br/>#}
-{#Main Actors#}
-{#{% endblock %}#}
+{% block content %}
+<br/><br/>
+<head>
+<style>
+    th{
+        max-width: 200px;
+        text-align: center;
+    }
+    td{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+    }
+    </style>
+</head>
+    <h2>Actor Table</h2>
+    <table class="table table-hover table-sm">
+        <thead class="thead-light" data-file-width="5px">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Date</th>
+                <th scope="col">Place</th>
+                <th scope="col">Masterpiece</th>
+                <th scope="col">Awards_wins</th>
+                <th scope="col">Award_nomination</th>
+            </tr>
+        </thead>
+        {% for ac in Actor %}
+        <tr>
+            <th scope="row"> {{ ac.name }}</th>
+            <td align="center"> {{ ac.date }}</td>
+            <td align="center"> {{ ac.place }}</td>
+            <td align="center"> {{ ac.masterpiece }}</td>
+            <td align="center"> {{ ac.award_win }}</td>
+            <td align="center"> {{ ac.award_nom }}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+
+
+<div class="container" align="center">
+    <div class="pagination">
+        {% if Actor.has_other_pages %}
+            <nav aria-label="Page navigation example">
+            <ul class="pagination">
+            {% if Actor.has_previous %}
+                <li class="page-item"><a class="page-link" href="?page={{ Actor.previous_page_number }}">&laquo;</a></li>
+            {% else %}
+                <li class="page-item disabled"><a class="page-link" href="#">&laquo;</a></li>
+            {% endif %}
+            {% for i in Actor.paginator.page_range %}
+                {% if Movie.number == i %}
+                    <li class="page-item active" aria-current="page"><a class="page-link" href="?page={{ i }}">{{ i }} <span class="sr-only">(current)</span></a></li>
+                {% else %}
+                    <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                {% endif %}
+            {% endfor %}
+            {% if Actor.has_next %}
+                <li class="page-item"><a class="page-link" href="?page={{ Actor.next_page_number }}">&raquo;</a></li>
+            {% else %}
+                <li class="page-item disabled"><a class="page-link" href="#">&raquo;</a></li>
+            {% endif %}
+            </ul>
+            </nav>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}
