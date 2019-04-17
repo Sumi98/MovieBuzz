@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
 from .models import Movie, Director, Actor
-# from .regressionModel import build_lg_model, prediction_box_office
+from .regressionModel import build_lg_model, prediction_box_office
 
 import csv, os
 from .forms import MovieForm
