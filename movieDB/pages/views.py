@@ -219,7 +219,7 @@ def search(request):
     query = request.GET.get('q')
     tep = "%%%s%%" % query
     filter_title = Director.objects.raw(
-        "SELECT m.title AS title, d.name AS name, d.masterpiece AS knownfor FROM pages_director AS d LEFT JOIN movie_0325 AS m ON d.name = m.director WHERE m.title LIKE %s",
+        "SELECT m.title AS title, d.name AS name, d.masterpiece AS knownfor FROM pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id WHERE m.title LIKE %s",
         [tep])
 
     return render(request, template, {'filter_title': filter_title})
