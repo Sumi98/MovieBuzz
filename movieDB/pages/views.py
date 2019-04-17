@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
 from .models import Movie, Director, Actor
-# from .regressionModel import build_lg_model, prediction_box_office
+from .regressionModel import build_lg_model, prediction_box_office
 
 import csv, os
 from .forms import MovieForm
@@ -80,10 +80,38 @@ def movie(request):
             except Actor.DoesNotExist:
                 act_nm = None
 
-            tmp = Movie(movieid=line['Movie_ID'], year=line['Year'], rank=line['Rank'], title=line['Title'],
-                        description=line['Description'], duration=line['Duration'], genres=line['Genre'],
-                        rating=line['Rating'], metascore=line['Metascore'], votes=line['Votes'],
-                        gross_earning_in_mil=line['Gross_Earning_in_Mil'], director=director_nm,
+            try:
+                rate = float(line['Rating'])
+            except ValueError:
+                rate = 0
+
+            try:
+                score = int(line['Metascore'])
+            except ValueError:
+                score = 0
+
+            try:
+                vote_num = int(line['Votes'])
+            except ValueError:
+                vote_num = 0
+
+            try:
+                earned = float(line['Gross_Earning_in_Mil'])
+            except ValueError:
+                earned = 0
+
+            tmp = Movie(movieid=line['Movie_ID'], 
+                        year=line['Year'], 
+                        rank=line['Rank'], 
+                        title=line['Title'],
+                        description=line['Description'], 
+                        duration=line['Duration'], 
+                        genres=line['Genre'],
+                        rating=rate, 
+                        metascore=score, 
+                        votes=vote_num,
+                        gross_earning_in_mil=earned, 
+                        director=director_nm,
                         actor=act_nm)
 
             tmp.save()
@@ -118,7 +146,7 @@ def actor(request):
 
             # .rstrip() is added to remove '\n'
             # strip(' ') for 'st_name' since some names may have a space the the begining
-            tmp = Actor(name = line['st_name'].rstrip().strip(' '), 
+            tmp = Actor(name = line['st_name'],
                         date = line['st_date'], 
                         place = line['st_place'], 
                         masterpiece = clean_string_list(line['st_knownfor']), 
