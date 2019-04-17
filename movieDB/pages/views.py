@@ -73,11 +73,16 @@ def movie(request):
             except Director.DoesNotExist:
                 director_nm = None
 
+            try:
+                act_nm = Actor.objects.get(name=line['Actor'])
+            except Actor.DoesNotExist:
+                act_nm = None
+
             tmp = Movie(movieid=line['Movie_ID'], year=line['Year'], rank=line['Rank'], title=line['Title'],
                         description=line['Description'], duration=line['Duration'], genres=line['Genre'],
                         rating=line['Rating'], metascore=line['Metascore'], votes=line['Votes'],
                         gross_earning_in_mil=line['Gross_Earning_in_Mil'], director=director_nm,
-                        actor=line['Actor'])
+                        actor=act_nm)
 
             tmp.save()
 
@@ -109,13 +114,9 @@ def actor(request):
             except ValueError:
                 val_nom = None
 
-            try:
-                per_link = line['st_link']
-            except OperationalError:
-                per_link = None
-
             # .rstrip() is added to remove '\n'
-            tmp = Actor(name = line['st_name'].rstrip(), 
+            # strip(' ') for 'st_name' since some names may have a space the the begining
+            tmp = Actor(name = line['st_name'].rstrip().strip(' '), 
                         date = line['st_date'], 
                         place = line['st_place'], 
                         masterpiece = clean_string_list(line['st_knownfor']), 
