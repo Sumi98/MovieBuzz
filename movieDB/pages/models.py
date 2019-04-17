@@ -26,3 +26,13 @@ class Director(models.Model):
     masterpiece = models.CharField(max_length=500, null=True)
     award_win = models.IntegerField(blank=True, null=True, default=None)
     award_nom = models.IntegerField(blank=True, null=True, default=None)
+
+class Actor(models.Model):
+    name = models.CharField(max_length=100, primary_key=True)
+    date = models.CharField(max_length=100, null=True)
+    place = models.CharField(max_length=500, null=True)
+    masterpiece = models.CharField(max_length=500, null=True)
+    award_win = models.IntegerField(blank=True, null=True, default=None)
+    award_nom = models.IntegerField(blank=True, null=True, default=None)
+    person_link = models.CharField(max_length=500, null=True)
+    award_link = models.CharField(max_length=500, null=True)

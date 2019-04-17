@@ -1,7 +1,7 @@
 from django.contrib import messages
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
-from .models import Movie, Director
+from .models import Movie, Director, Actor
 import csv, os
 from .forms import MovieForm
 from django.core.paginator import Paginator
@@ -100,7 +100,37 @@ def movie(request):
 
 
 def actor(request):
-    return render(request, "actor.html", {})
+    base_dir = os.path.abspath(__file__)
+
+    for i in range(3):
+        base_dir = os.path.dirname(base_dir)
+
+    with open(base_dir + '/Data/star.csv') as g:
+        reader = csv.DictReader(g)
+        for line in reader:
+            # try:
+            #     val = int(line['dr_awards_wins'])
+            # except ValueError:
+            #     val = None
+
+            # try:
+            #     val_nom = int(line['dr_awards_nomi tions'])
+            # except ValueError:
+            #     val_nom = None
+
+            tmp = Actor(name=line['st_name'], date=line['st_date'], place=line['st_place'],
+                           masterpiece=line['st_knownfor'], award_win=line['st_awards_wins'],
+                           award_nom=line['st_awards_nominations'])
+
+            tmp.save()
+
+    all_actor = Actor.objects.all()
+
+    paginator = Paginator(all_actor, 50)
+    page = request.GET.get('page')
+    actors = paginator.get_page(page)
+
+    return render(request, "actor.html", {'Actor': actors})
 
 
 def prediction(request):
