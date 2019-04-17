@@ -229,6 +229,8 @@ def search(request):
 
 
 def detail(request, id=None):
+    template = 'movie_list.html'
+    
     movie= get_object_or_404(Movie, id=id)
     # items = []
     # try:
@@ -258,7 +260,7 @@ def detail(request, id=None):
     # except:
     #     return render(request, '404.html')
     # return render(request, '{}_list.html'.format(label), {'items': items, 'number': len(items), 'object': object})
-    return render(request, 'movie_list.html', {'movie': movie,})
+    return render(request, template, {'movie': movie})
 
 
 
