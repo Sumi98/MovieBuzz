@@ -257,7 +257,7 @@ def search(request):
         WHERE m.title LIKE %s", [tep])
  
     filter_data = Director.objects.raw(
-        "SELECT m.title AS title, m.rating AS rating, m.votes AS votes, m.metascore AS metoscore, \
+        "SELECT m.title AS title, m.rating AS rating, m.votes AS votes, m.metascore AS metascore, \
         m.gross_earning_in_mil AS gross, d.name AS name, d.award_win AS d_win, d.award_nom AS d_nom, \
         a.name AS star, a.award_win AS a_win, a.award_nom AS a_nom \
         FROM ((pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id) \
@@ -280,27 +280,27 @@ def search(request):
     d_nom_max = Director.objects.all().aggregate(r3 = Max('award_nom'))
     d_nom_min = Director.objects.all().aggregate(r4 = Min('award_nom'))
 
-    d_range = d_win_max.get('r1')+d_win_max.get('r3')-d_win_min.get('r2')-d_nom_min.get('r4')
-    new_d_award = (d_award-(d_win_min.get('r2')-d_nom_min.get('r4')))/d_range*100
+    # d_range = d_win_max.get('r1')+d_win_max.get('r3')-d_win_min.get('r2')-d_nom_min.get('r4')
+    # new_d_award = (d_award-(d_win_min.get('r2')-d_nom_min.get('r4')))/d_range*100
 
-    a_win_max = Actor.objects.all().aggregate(r1 = Max('award_win'))
-    a_win_min = Actor.objects.all().aggregate(r2 = Min('award_win'))
-    a_nom_max = Actor.objects.all().aggregate(r3 = Max('award_nom'))
-    a_nom_min = Actor.objects.all().aggregate(r4 = Min('award_nom'))
+    # a_win_max = Actor.objects.all().aggregate(r1 = Max('award_win'))
+    # a_win_min = Actor.objects.all().aggregate(r2 = Min('award_win'))
+    # a_nom_max = Actor.objects.all().aggregate(r3 = Max('award_nom'))
+    # a_nom_min = Actor.objects.all().aggregate(r4 = Min('award_nom'))
 
-    a_range = a_win_max.get('r1')+a_win_max.get('r3')-a_win_min.get('r2')-a_nom_min.get('r4')
-    new_a_award = (a_award-(a_win_min.get('r2')-a_nom_min.get('r4')))/a_range*100
+    # a_range = a_win_max.get('r1')+a_win_max.get('r3')-a_win_min.get('r2')-a_nom_min.get('r4')
+    # new_a_award = (a_award-(a_win_min.get('r2')-a_nom_min.get('r4')))/a_range*100
 
 
     rating_max = Movie.objects.all().aggregate(rm1 = Max('rating'))
     rating_min = Movie.objects.all().aggregate(rm2 = Min('rating'))
-    rating_range = rating_max.get('rm1')-rating_min.get('rm2')
-    new_rating = (rating-rating_min.get('rm2'))/rating_range*100
+    # rating_range = rating_max.get('rm1')-rating_min.get('rm2')
+    # new_rating = (rating-rating_min.get('rm2'))/rating_range*100
     
-    votes_max = Movie.objects.all().aggregate(rm1 = Max('votes'))
-    votes_min = Movie.objects.all().aggregate(rm2 = Min('votes'))
-    votes_range = votes_max.get('rm1')-votes_min.get('rm2')
-    new_votes = (votes-votes_min.get('rm2'))/votes_range*100
+    # votes_max = Movie.objects.all().aggregate(rm1 = Max('votes'))
+    # votes_min = Movie.objects.all().aggregate(rm2 = Min('votes'))
+    # votes_range = votes_max.get('rm1')-votes_min.get('rm2')
+    # new_votes = (votes-votes_min.get('rm2'))/votes_range*100
 
     # metascore_max = Movie.objects.all().aggregate(rm1 = Max('metascore'))
     # metascore_min = Movie.objects.all().aggregate(rm2 = Min('metascore'))
@@ -315,10 +315,10 @@ def search(request):
     context = {
         'filter_title': limit_tuple,
         'limit_tuple': limit_tuple,
-        'new_rating': new_rating,
-        'new_votes': new_votes,
-        'win_data': win_data,
-        'nom_data': nom_data
+        'new_rating': rating_max,
+        # 'new_votes': new_votes,
+        # 'win_data': d_nom_min,
+        # 'nom_data': nom_data
         # 'new_metascore': new_metascore,
         # 'new_gross': new_gross    
     }

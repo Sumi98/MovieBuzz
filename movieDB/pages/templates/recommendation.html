@@ -45,7 +45,7 @@
             {% endfor %}
             <!-- {% for movie in limit_tuple %} -->
 
-                <td> {{new_votes}} </td>
+                <td> {{ new_rating }} </td>
 
             <!-- {% endfor %} -->
             </tbody>
@@ -69,8 +69,10 @@
     <script type="text/javascript"> 
         var mW = 400;
         var mH = 400;
-        var mData = [['rating', {% new_rating %}],
-                                ['votes', {% new_votes %}],
+        // var new_rating = "{{new_rating}}";
+        // var new_votes = "{{new_votes}}"
+        var mData = [['rating', 20],
+                                ['votes', 30],
                                 ['metoscore', 46],
                                 ['gross', 70],
                                 ['传球', 68],
