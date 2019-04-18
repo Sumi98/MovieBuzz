@@ -22,8 +22,7 @@ def install(package):
         pip.main(['install', package])
     else:
         pip._internal.main(['install', package])
-        
-# load pandasql
+
 try:
 	import pandasql as ps
 except ImportError:
@@ -48,6 +47,7 @@ def get_Movie_df(Movie):
 	movie_df = movie_df.join(dummy_df)
 
 	return movie_df
+	# pass
 
 def get_Actor_df(Actor):
 	actor_df = pd.DataFrame()
@@ -61,6 +61,7 @@ def get_Actor_df(Actor):
 	masterpiece_tmp.columns = ['Masterpiece_1', 'Masterpiece_2', 'Masterpiece_3', 'Masterpiece_4']
 	actor_df = actor_df.join(masterpiece_tmp)
 	return actor_df
+	# pass
 
 def get_Director_df(Director):
 	director_df = pd.DataFrame()
@@ -73,6 +74,7 @@ def get_Director_df(Director):
 	director_df['AwardNom'] = pd.Series(list(map(lambda x: int(x.award_nom), Director.objects.only("award_nom"))))
 	director_df = director_df.join(masterpiece_tmp)
 	return director_df
+	# pass
 
 def build_lg_model(Movie, Director, Actor):
 	movie_df = get_Movie_df(Movie)
@@ -96,6 +98,7 @@ def build_lg_model(Movie, Director, Actor):
 	# Split X and y into X_
 	# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=1)
 	return scores
+	# pass
 
 def prediction_box_office():
 	pass
@@ -107,11 +110,19 @@ def prediction_box_office():
 # score = build_lg_model(Movie, Director, Actor)
 # print(score)
 
-actor_df = get_Actor_df(Actor)
-print(actor_df.loc[:5, 'Masterpiece'])
+# actor_df = get_Actor_df(Actor)
+# print(actor_df.loc[:5, 'Masterpiece'])
 
 # director_df = get_Director_df(Director)
 # print(director_df.iloc[:5])
+
+# SQL v.s. panda
+# airport_freq.merge(airports[airports.ident == 'KLAX'][['id']], 
+# 				   left_on='airport_ref', 
+# 				   right_on='id', 
+# 				   how='inner')[['airport_ident', 'type', 'description', 'frequency_mhz']]
+
+# select airport_ident, type, description, frequency_mhz from airport_freq join airports on airport_freq.airport_ref = airports.id where airports.ident = 'KLAX'
 
 
 
