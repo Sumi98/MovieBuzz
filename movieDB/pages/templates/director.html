@@ -49,7 +49,6 @@
     </table>
 
 
-<div class="container" align="center">
     <div class="pagination">
         {% if Director.has_other_pages %}
             <nav aria-label="Page navigation example">
@@ -60,7 +59,7 @@
                 <li class="page-item disabled"><a class="page-link" href="#">&laquo;</a></li>
             {% endif %}
             {% for i in Director.paginator.page_range %}
-                {% if Movie.number == i %}
+                {% if Director.number == i %}
                     <li class="page-item active" aria-current="page"><a class="page-link" href="?page={{ i }}">{{ i }} <span class="sr-only">(current)</span></a></li>
                 {% else %}
                     <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
@@ -75,6 +74,5 @@
             </nav>
         {% endif %}
     </div>
-</div>
 
 {% endblock %}
