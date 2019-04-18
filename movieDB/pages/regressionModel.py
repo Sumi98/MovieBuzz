@@ -1,4 +1,5 @@
 import os
+import pip
 # enable relect results in terminal
 import django
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "myapp.settings")
@@ -15,6 +16,18 @@ from sklearn.model_selection import KFold
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
+
+def install(package):
+    if hasattr(pip, 'main'):
+        pip.main(['install', package])
+    else:
+        pip._internal.main(['install', package])
+        
+# load pandasql
+try:
+	import pandasql as ps
+except ImportError:
+	install('pandasql')
 
 def get_Movie_df(Movie):
 	# store records into a dataframe
@@ -36,23 +49,38 @@ def get_Movie_df(Movie):
 
 	return movie_df
 
-# def get_Actor_df(Actor):
-# 	actor_df = pd.DataFrame()
-# 	actor_df['Name'] = pd.Series(list(map(lambda x: x.name, Actor.objects.only("name"))))
-# 	actor_df['Date'] = pd.Series(list(map(lambda x: x.date, Actor.objects.only("date"))))
-# 	tmp = pd.DataFrame(list(map(lambda x: (x.masterpiece).split(', '), Actor.objects.only("masterpiece"))))
-# 	actor_df['AwardWin'] = pd.Series(list(map(lambda x: int(x.award_win), Actor.objects.only("award_win"))))
-# 	actor_df['AwardNom'] = pd.Series(list(map(lambda x: int(x.award_nom), Actor.objects.only("award_nom"))))
+def get_Actor_df(Actor):
+	actor_df = pd.DataFrame()
+	actor_df['Name'] = pd.Series(list(map(lambda x: x.name, Actor.objects.only("name"))))
+	actor_df['Date'] = pd.Series(list(map(lambda x: x.date, Actor.objects.only("date"))))
+	actor_df['Masterpiece'] = pd.Series(list(map(lambda x: x.masterpiece, Actor.objects.only("masterpiece"))))
+	actor_df['AwardWin'] = pd.Series(list(map(lambda x: int(x.award_win), Actor.objects.only("award_win"))))
+	actor_df['AwardNom'] = pd.Series(list(map(lambda x: int(x.award_nom), Actor.objects.only("award_nom"))))
+	# string split by ', ', only key first 4 columns
+	masterpiece_tmp = pd.DataFrame(list(map(lambda x: x.masterpiece.split(', '), Actor.objects.only("masterpiece")))).drop([4, 5, 6], axis = 1)
+	masterpiece_tmp.columns = ['Masterpiece_1', 'Masterpiece_2', 'Masterpiece_3', 'Masterpiece_4']
+	actor_df = actor_df.join(masterpiece_tmp)
+	return actor_df
 
-# 	# Convert category variable to indicator variable
-# 	dummy_df = pd.get_dummies(actor_df.Genre, prefix = 'Genre')
-# 	actor_df = actor_df.join(dummy_df)
-
-
-# 	return tmp
+def get_Director_df(Director):
+	director_df = pd.DataFrame()
+	director_df['Name'] = pd.Series(list(map(lambda x: x.name, Director.objects.only("name"))))
+	director_df['Date'] = pd.Series(list(map(lambda x: x.date, Director.objects.only("date"))))
+	# string split by ', ', only key first 4 columns
+	masterpiece_tmp = pd.DataFrame(list(map(lambda x: (x.masterpiece).split(', '), Director.objects.only("masterpiece")))).drop([4, 5], axis = 1)
+	masterpiece_tmp.columns = ['Masterpiece_1', 'Masterpiece_2', 'Masterpiece_3', 'Masterpiece_4']
+	director_df['AwardWin'] = pd.Series(list(map(lambda x: int(x.award_win), Director.objects.only("award_win"))))
+	director_df['AwardNom'] = pd.Series(list(map(lambda x: int(x.award_nom), Director.objects.only("award_nom"))))
+	director_df = director_df.join(masterpiece_tmp)
+	return director_df
 
 def build_lg_model(Movie, Director, Actor):
 	movie_df = get_Movie_df(Movie)
+	actor_df = get_Actor_df(Actor)
+	director_df = get_Director_df(Director)
+	print(movie_df.columns)
+	print(actor_df.columns)
+	print(director_df.columns)
 
 	X = movie_df.drop(['Genre', 'Title', 'Earned'], axis = 1)
 	y = movie_df.Earned
@@ -78,8 +106,12 @@ def prediction_box_office():
 # print(pd.get_dummies(movie_df.loc[:5].Genre))
 # score = build_lg_model(Movie, Director, Actor)
 # print(score)
-# actor_df = get_Actor_df(Actor)
-# print(actor_df.iloc[:5])
+
+actor_df = get_Actor_df(Actor)
+print(actor_df.loc[:5, 'Masterpiece'])
+
+# director_df = get_Director_df(Director)
+# print(director_df.iloc[:5])
 
 
 
