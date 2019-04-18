@@ -16,11 +16,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
-# def category_one_hot_encoder(df, column):
-# 	# Convert categorical variable into dummy/indicator variables,
-# 	# remove original column with categorical variable, combine indicator column into originl df
-# 	dummy_df = pd.get_dummies(df.column)
-
 def get_Movie_df(Movie):
 	# store records into a dataframe
 	movie_df = pd.DataFrame()
@@ -40,6 +35,21 @@ def get_Movie_df(Movie):
 	movie_df = movie_df.join(dummy_df)
 
 	return movie_df
+
+# def get_Actor_df(Actor):
+# 	actor_df = pd.DataFrame()
+# 	actor_df['Name'] = pd.Series(list(map(lambda x: x.name, Actor.objects.only("name"))))
+# 	actor_df['Date'] = pd.Series(list(map(lambda x: x.date, Actor.objects.only("date"))))
+# 	tmp = pd.DataFrame(list(map(lambda x: (x.masterpiece).split(', '), Actor.objects.only("masterpiece"))))
+# 	actor_df['AwardWin'] = pd.Series(list(map(lambda x: int(x.award_win), Actor.objects.only("award_win"))))
+# 	actor_df['AwardNom'] = pd.Series(list(map(lambda x: int(x.award_nom), Actor.objects.only("award_nom"))))
+
+# 	# Convert category variable to indicator variable
+# 	dummy_df = pd.get_dummies(actor_df.Genre, prefix = 'Genre')
+# 	actor_df = actor_df.join(dummy_df)
+
+
+# 	return tmp
 
 def build_lg_model(Movie, Director, Actor):
 	movie_df = get_Movie_df(Movie)
@@ -68,7 +78,8 @@ def prediction_box_office():
 # print(pd.get_dummies(movie_df.loc[:5].Genre))
 # score = build_lg_model(Movie, Director, Actor)
 # print(score)
-
+# actor_df = get_Actor_df(Actor)
+# print(actor_df.iloc[:5])
 
 
 
