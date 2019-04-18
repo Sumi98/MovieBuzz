@@ -45,7 +45,7 @@
             {% endfor %}
             <!-- {% for movie in limit_tuple %} -->
 
-                <td> {{ new_rating }} </td>
+                <td> {{ new_gross }} </td>
 
             <!-- {% endfor %} -->
             </tbody>
@@ -69,14 +69,18 @@
     <script type="text/javascript"> 
         var mW = 400;
         var mH = 400;
-        // var new_rating = "{{new_rating}}";
-        // var new_votes = "{{new_votes}}"
-        var mData = [['rating', 20],
-                                ['votes', 30],
-                                ['metoscore', 46],
-                                ['gross', 70],
-                                ['传球', 68],
-                                ['耐力', 36]];
+        var new_rating = "{{new_rating}}";
+        var new_votes = "{{new_votes}}"
+        var new_d_award = "{{new_d_award}}"
+        var new_a_award = "{{new_a_award}}"
+        var new_metascore = "{{new_metascore}}"
+        var new_gross = "{{new_gross}}"
+        var mData = [['rating', new_rating],
+                                ['votes', new_votes ],
+                                ['metoscore', new_metascore],
+                                ['gross', new_gross],
+                                ['director awards', new_d_award ],
+                                ['actor awards', new_a_award ]];
         var mCount = mData.length; //边数 
         var mCenter = mW /2; //中心点
         var mRadius = mCenter - 50; //半径(减去的值用于给绘制的文本留空间)
@@ -194,7 +198,7 @@
         function drawCircle(ctx){
             ctx.save();
 
-            var r = mCenter / 18;
+            var r = mCenter / 100;
             for(var i = 0; i < mCount; i ++){
                 var x = mCenter + mRadius * Math.cos(mAngle * i) * mData[i][1] / 100;
                 var y = mCenter + mRadius * Math.sin(mAngle * i) * mData[i][1] / 100;

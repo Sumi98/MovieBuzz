@@ -280,47 +280,47 @@ def search(request):
     d_nom_max = Director.objects.all().aggregate(r3 = Max('award_nom'))
     d_nom_min = Director.objects.all().aggregate(r4 = Min('award_nom'))
 
-    # d_range = d_win_max.get('r1')+d_win_max.get('r3')-d_win_min.get('r2')-d_nom_min.get('r4')
-    # new_d_award = (d_award-(d_win_min.get('r2')-d_nom_min.get('r4')))/d_range*100
+    d_range = d_win_max.get('r1')+d_nom_max.get('r3')-d_win_min.get('r2')-d_nom_min.get('r4')
+    new_d_award = (d_award-(d_win_min.get('r2')-d_nom_min.get('r4')))/d_range*100
 
-    # a_win_max = Actor.objects.all().aggregate(r1 = Max('award_win'))
-    # a_win_min = Actor.objects.all().aggregate(r2 = Min('award_win'))
-    # a_nom_max = Actor.objects.all().aggregate(r3 = Max('award_nom'))
-    # a_nom_min = Actor.objects.all().aggregate(r4 = Min('award_nom'))
+    a_win_max = Actor.objects.all().aggregate(r1 = Max('award_win'))
+    a_win_min = Actor.objects.all().aggregate(r2 = Min('award_win'))
+    a_nom_max = Actor.objects.all().aggregate(r3 = Max('award_nom'))
+    a_nom_min = Actor.objects.all().aggregate(r4 = Min('award_nom'))
 
-    # a_range = a_win_max.get('r1')+a_win_max.get('r3')-a_win_min.get('r2')-a_nom_min.get('r4')
-    # new_a_award = (a_award-(a_win_min.get('r2')-a_nom_min.get('r4')))/a_range*100
+    a_range = a_win_max.get('r1')+a_nom_max.get('r3')-a_win_min.get('r2')-a_nom_min.get('r4')
+    new_a_award = (a_award-(a_win_min.get('r2')-a_nom_min.get('r4')))/a_range*100
 
 
     rating_max = Movie.objects.all().aggregate(rm1 = Max('rating'))
     rating_min = Movie.objects.all().aggregate(rm2 = Min('rating'))
-    # rating_range = rating_max.get('rm1')-rating_min.get('rm2')
-    # new_rating = (rating-rating_min.get('rm2'))/rating_range*100
+    rating_range = rating_max.get('rm1')-rating_min.get('rm2')
+    new_rating = (rating-rating_min.get('rm2'))/rating_range*100
     
-    # votes_max = Movie.objects.all().aggregate(rm1 = Max('votes'))
-    # votes_min = Movie.objects.all().aggregate(rm2 = Min('votes'))
-    # votes_range = votes_max.get('rm1')-votes_min.get('rm2')
-    # new_votes = (votes-votes_min.get('rm2'))/votes_range*100
+    votes_max = Movie.objects.all().aggregate(rm1 = Max('votes'))
+    votes_min = Movie.objects.all().aggregate(rm2 = Min('votes'))
+    votes_range = votes_max.get('rm1')-votes_min.get('rm2')
+    new_votes = (votes-votes_min.get('rm2'))/votes_range*100
 
-    # metascore_max = Movie.objects.all().aggregate(rm1 = Max('metascore'))
-    # metascore_min = Movie.objects.all().aggregate(rm2 = Min('metascore'))
-    # metascore_range = metascore_max.get('rm1')-metascore_min.get('rm2')
-    # new_metascore = (metascore-metascore_min.get('rm2'))/metascore_range*100
+    metascore_max = Movie.objects.all().aggregate(rm1 = Max('metascore'))
+    metascore_min = Movie.objects.all().aggregate(rm2 = Min('metascore'))
+    metascore_range = metascore_max.get('rm1')-metascore_min.get('rm2')
+    new_metascore = (metascore-metascore_min.get('rm2'))/metascore_range*100
 
-    # gross_max = Movie.objects.all().aggregate(rm1 = Max('gross_earning_in_mil'))
-    # gross_min = Movie.objects.all().aggregate(rm2 = Min('gross_earning_in_mil'))
-    # gross_range = gross_max.get('rm1')-gross_min.get('rm2')
-    # new_gross = (gross-gross_min.get('rm2'))/gross_range*100
+    gross_max = Movie.objects.all().aggregate(rm1 = Max('gross_earning_in_mil'))
+    gross_min = Movie.objects.all().aggregate(rm2 = Min('gross_earning_in_mil'))
+    gross_range = gross_max.get('rm1')-gross_min.get('rm2')
+    new_gross = (gross-gross_min.get('rm2'))/gross_range*100
 
     context = {
-        'filter_title': limit_tuple,
+        'filter_title': filter_title,
         'limit_tuple': limit_tuple,
-        'new_rating': rating_max,
-        # 'new_votes': new_votes,
-        # 'win_data': d_nom_min,
-        # 'nom_data': nom_data
-        # 'new_metascore': new_metascore,
-        # 'new_gross': new_gross    
+        'new_rating': new_rating,
+        'new_votes': new_votes,
+        'new_d_award': new_d_award,
+        'new_a_award': new_a_award,
+        'ew_metascoren': new_metascore,
+        'new_gross': new_gross    
     }
     return render(request, template, context)
 
