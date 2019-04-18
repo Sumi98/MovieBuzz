@@ -169,7 +169,14 @@ def actor(request):
 
 def prediction(request):
     template = "prediction.html"
-    return render(request, template, {})
+    model_lg, paramters, mse, score = build_lg_model(Movie, Director, Actor)
+    context = {
+        'score': score,
+        'cols': paramters,
+        'coefs': [ round(elem, 2) for elem in model_lg.coef_ ],
+        'mse': mse
+        }
+    return render(request, template, context)
 
 
 def recommendation(request):

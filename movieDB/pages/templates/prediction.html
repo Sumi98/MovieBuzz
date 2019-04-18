@@ -6,15 +6,41 @@
 {% endblock %}
 
 {% block content %}
-    <head>
-        <style>
-            body {
-                background: mintcream url("{% static 'images/hompage.jpg' %}") ;
-            }
-         </style>
-    </head>
-<br/> <br/>
-Advanced Function - @TODO in Next Stage
-<br/>
-Box Office Prediction: To be added
+<head>
+<style>
+    body {
+        background: mintcream url("{% static 'images/hompage.jpg' %}") ;
+    }
+    th{
+        max-width: 120px;
+        text-align: center;
+    }
+    td{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100px;
+    }
+    </style>
+</head>
+<h2>Regression Analysis</h2>
+<h3>Model Paramter</h3>
+    <table class="table table-hover table-sm">
+        <thead class="thead-light" data-file-width="5px">
+            <tr>
+        		{% for col in cols %}
+                <th scope="col">{{ col }}</th>
+            	{% endfor %}
+            </tr>
+        </thead>
+        <tr>
+        {% for coef in coefs %}
+            <td align="center"> {{ coef}}</td>
+        {% endfor %}
+        </tr>
+    </table>
+<h3>Mean Square Error</h3>
+<li> {{ mse }} </li>
+<h3>R2 Score</h3>
+<li> {{ score }} </li>
 {% endblock %}
