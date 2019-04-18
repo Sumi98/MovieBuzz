@@ -33,7 +33,6 @@
                 <th scope="col">Title</th>
                 <th scope="col">Director</th>
                 <th scope="col">Actor</th>
-                <th scope="col">Max</th>
             </tr>
             </thead>
             <tbody>
@@ -42,12 +41,11 @@
                     <th scope="row"> {{ movie.title }}</th>
                     <td> {{ movie.name }}</td>
                     <td> {{ movie.star }}</td>
-                    <td> {{ filter_title.name }}</td>
                 </tr>
             {% endfor %}
             <!-- {% for movie in limit_tuple %} -->
 
-                <td> {{votes_range}} </td>
+                <td> {{new_votes}} </td>
 
             <!-- {% endfor %} -->
             </tbody>
@@ -68,14 +66,13 @@
 
     {% endif %}
 
-    {% for movie in limit_tuple %}
     <script type="text/javascript"> 
         var mW = 400;
         var mH = 400;
-        var mData = [['rating', new_rating.new_rating],
-                                ['votes', new_votes.new_votes],
+        var mData = [['rating', {% new_rating %}],
+                                ['votes', {% new_votes %}],
                                 ['metoscore', 46],
-                                ['gross', new_gross.new_gross],
+                                ['gross', 70],
                                 ['传球', 68],
                                 ['耐力', 36]];
         var mCount = mData.length; //边数 
@@ -210,5 +207,5 @@
         }
 
     </script>
-    {% endfor %}
+
 {% endblock %}
