@@ -34,12 +34,12 @@ def director(request):
             try:
                 val = int(line['dr_awards_wins'])
             except ValueError:
-                val = None
+                val = 0
 
             try:
                 val_nom = int(line['dr_awards_nomi tions'])
             except ValueError:
-                val_nom = None
+                val_nom = 0
 
             tmp = Director(name=line['dr_name'], 
                            date=line['dr_date'], 
@@ -99,7 +99,7 @@ def movie(request):
             try:
                 earned = float(line['Gross_Earning_in_Mil'])
             except ValueError:
-                earned = 0
+                earned = 0.0
 
             tmp = Movie(movieid=line['Movie_ID'], 
                         year=line['Year'], 
@@ -138,12 +138,12 @@ def actor(request):
             try:
                 val = int(line['st_awards_wins'])
             except ValueError:
-                val = None
+                val = 0
 
             try:
                 val_nom = int(line['st_awards_nominations'])
             except ValueError:
-                val_nom = None
+                val_nom = 0
 
             # .rstrip() is added to remove '\n'
             # strip(' ') for 'st_name' since some names may have a space the the begining
