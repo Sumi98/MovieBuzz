@@ -20,16 +20,6 @@ from sklearn.metrics import mean_squared_error
 
 import matplotlib.pyplot as plt
 
-# def install(package):
-#     if hasattr(pip, 'main'):
-#         pip.main(['install', package])
-#     else:
-#         pip._internal.main(['install', package])
-
-# try:
-#   import pandasql as ps
-# except ImportError:
-#   install('pandasql')
 
 def get_Movie_df(Movie):
     # store records into a dataframe
