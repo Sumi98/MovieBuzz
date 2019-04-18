@@ -1,6 +1,6 @@
 from django.contrib import messages
 from django.shortcuts import render, get_object_or_404
-from django.db.models import Q, Max
+from django.db.models import Q, Max, Min
 from .models import Movie, Director, Actor
 from .regressionModel import build_lg_model, prediction_box_office
 
@@ -99,7 +99,7 @@ def movie(request):
             try:
                 earned = float(line['Gross_Earning_in_Mil'])
             except ValueError:
-                earned = 0
+                earned = 0.0
 
             tmp = Movie(movieid=line['Movie_ID'], 
                         year=line['Year'], 
@@ -252,21 +252,55 @@ def search(request):
     tep = "%%%s%%" % query
     filter_title = Director.objects.raw(
         "SELECT m.title AS title, d.name AS name, a.name AS star \
-        FROM ((pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id) LEFT JOIN pages_actor AS a ON a.name = m.actor_id) \
-        WHERE m.title LIKE %s", [tep])[:1]
-    # filter_title = Actor.objects.raw(
-    #     "SELECT m.title AS title, a.name AS name, a.masterpiece AS knownfor FROM pages_actor AS a LEFT JOIN pages_movie AS m ON a.name = m.actor_id WHERE m.title LIKE %s",
-    #     [tep])
-    limit_tuple = Movie.objects.raw(
-        "SELECT m.title AS title, m.rating AS rating, m.metascore AS metoscore, \
-        m.votes AS votes, m.gross_earning_in_mil AS gross, d.name AS name \
-        FROM pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id WHERE m.title LIKE %s LIMIT 1",[tep])
-    win_data = Director.objects.raw("SELECT d.name AS name, MAX(d.award_win) AS win_max, MIN(d.award_win) AS win_min FROM pages_director AS d")
-    nom_data = Director.objects.raw("SELECT d.name AS name, MAX(d.award_nom) AS win_nom, MIN(d.award_nom) AS win_nom FROM pages_director AS d")
-    # data_max = Movie.objects.all().aggregate(Max('rating'))
+        FROM ((pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id) \
+        LEFT JOIN pages_actor AS a ON a.name = m.actor_id) \
+        WHERE m.title LIKE %s", [tep])
+ 
+    filter_data = Director.objects.raw(
+        "SELECT m.title AS title, m.rating AS rating, m.votes AS votes, m.metascore AS metoscore, \
+        m.gross_earning_in_mil AS gross, d.name AS name, a.name AS star \
+        FROM ((pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id) \
+        LEFT JOIN pages_actor AS a ON a.name = m.actor_id) \
+        WHERE m.title LIKE %s", [tep])
+
+    limit_tuple = filter_data[:1]
+    for movie in limit_tuple:
+        title = movie.title
+        rating = movie.rating
+        votes = movie.votes
+        # metascore = movie.metascore
+        gross = movie.gross
+
+    # data_max = limit_tuple
+    # win_data = Director.objects.raw("SELECT d.name AS name, MAX(d.award_win) AS win_max, MIN(d.award_win) AS win_min FROM pages_director AS d")
+    # nom_data = Director.objects.raw("SELECT d.name AS name, MAX(d.award_nom) AS win_nom, MIN(d.award_nom) AS win_nom FROM pages_director AS d")
+    rating_max = Movie.objects.all().aggregate(rm1 = Max('rating'))
+    rating_min = Movie.objects.all().aggregate(rm2 = Min('rating'))
+    rating_range = rating_max.get('rm1')-rating_min.get('rm2')
+    new_rating = (rating-rating_min.get('rm2'))/rating_range*100
+    
+    votes_max = Movie.objects.all().aggregate(rm1 = Max('votes'))
+    votes_min = Movie.objects.all().aggregate(rm2 = Min('votes'))
+    votes_range = votes_max.get('rm1')-votes_min.get('rm2')
+    new_votes = (votes-votes_min.get('rm2'))/votes_range*100
+
+    # metascore_max = Movie.objects.all().aggregate(rm1 = Max('metascore'))
+    # metascore_min = Movie.objects.all().aggregate(rm2 = Min('metascore'))
+    # metascore_range = metascore_max.get('rm1')-metascore_min.get('rm2')
+    # new_metascore = (metascore-metascore_min.get('rm2'))/metascore_range*100
+
+    # gross_max = Movie.objects.all().aggregate(rm1 = Max('gross_earning_in_mil'))
+    # gross_min = Movie.objects.all().aggregate(rm2 = Min('gross_earning_in_mil'))
+    # gross_range = gross_max.get('rm1')-gross_min.get('rm2')
+    # new_gross = (gross-gross_min.get('rm2'))/gross_range*100
+
     context = {
-        'filter_title': filter_title,
-        # 'data_max': data_max
+        'filter_title': limit_tuple,
+        'limit_tuple': limit_tuple,
+        'new_rating': new_rating,
+        'new_votes': new_votes,
+        # 'new_metascore': new_metascore,
+        # 'new_gross': new_gross    
     }
     return render(request, template, context)
 
