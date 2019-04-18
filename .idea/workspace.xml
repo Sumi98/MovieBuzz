@@ -1,108 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d52431cf-205d-42d5-97f6-a7525021b691" name="Default Changelist" comment="ellipsis">
+    <list default="true" id="d52431cf-205d-42d5-97f6-a7525021b691" name="Default Changelist" comment="r">
       <change beforePath="$PROJECT_DIR$/.idea/CS411_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CS411_Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/300: Rise of an Empire.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Abraham Lincoln: Vampire Hunter.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Alien: Covenant.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Alvin and the Chipmunks: The Squeakquel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Annabelle: Creation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Avengers: Age of Ultron.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Avengers: Infinity War.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Batman v Superman: Dawn of Justice.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Captain America: Civil War.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Captain America: The First Avenger.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Captain America: The Winter Soldier.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Dragonball: Evolution.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Exodus: Gods and Kings.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Fantastic Beasts: The Crimes of Grindelwald.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/G.I. Joe: Retaliation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/G.I. Joe: The Rise of Cobra.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Hachi: A Dog's Tale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Hansel &amp; Gretel: Witch Hunters.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Harry Potter and the Deathly Hallows: Part 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Harry Potter and the Deathly Hallows: Part 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Hellboy II: The Golden Army.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Hotel Transylvania 3: Summer Vacation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Independence Day: Resurgence.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Jack Reacher: Never Go Back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Jack Ryan: Shadow Recruit.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/John Wick: Chapter 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Journey 2: The Mysterious Island.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Jumanji: Welcome to the Jungle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Jurassic World: Fallen Kingdom.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Kill Bill: The Whole Bloody Affair.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/King Arthur: Legend of the Sword.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Kingsman: The Golden Circle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Kingsman: The Secret Service.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Kong: Skull Island.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Mad Max: Fury Road.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Madagascar: Escape 2 Africa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Maze Runner: The Scorch Trials.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Mechanic: Resurrection.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Mission: Impossible - Fallout.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Mission: Impossible - Ghost Protocol.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Mission: Impossible - Rogue Nation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Night at the Museum: Battle of the Smithsonian.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Night at the Museum: Secret of the Tomb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Nymphomaniac: Vol. I.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Nymphomaniac: Vol. II.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Percy Jackson &amp; the Olympians: The Lightning Thief.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Percy Jackson: Sea of Monsters.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Pirates of the Caribbean: Dead Men Tell No Tales.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Pirates of the Caribbean: On Stranger Tides.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Prince of Persia: The Sands of Time.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Punisher: War Zone.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Resident Evil: Afterlife.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Resident Evil: Retribution.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Resident Evil: The Final Chapter.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Sherlock Holmes: A Game of Shadows.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Sicario: Day of the Soldado.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Sin City: A Dame to Kill For.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Solo: A Star Wars Story.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Spider-Man: Homecoming.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Spider-Man: Into the Spider-Verse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Spy Kids 4: All the Time in the World.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Star Wars: Episode VII - The Force Awakens.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Star Wars: Episode VIII - The Last Jedi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Teenage Mutant Ninja Turtles: Out of the Shadows.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Boondock Saints II: All Saints Day.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Chronicles of Narnia: Prince Caspian.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Chronicles of Narnia: The Voyage of the Dawn Treader.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hobbit: An Unexpected Journey.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hobbit: The Battle of the Five Armies.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hobbit: The Desolation of Smaug.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hunger Games: Catching Fire.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hunger Games: Mockingjay - Part 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hunger Games: Mockingjay - Part 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Huntsman: Winter's War.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Mortal Instruments: City of Bones.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Mummy: Tomb of the Dragon Emperor.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Purge: Anarchy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Purge: Election Year.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Raid: Redemption.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Twilight Saga: Breaking Dawn - Part 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Twilight Saga: Breaking Dawn - Part 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Twilight Saga: Eclipse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Twilight Saga: New Moon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The VVitch: A New-England Folktale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Thor: Ragnarok.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Thor: The Dark World.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Transformers: Age of Extinction.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Transformers: Dark of the Moon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Transformers: Revenge of the Fallen.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Transformers: The Last Knight.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Underworld: Blood Wars.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Underworld: Rise of the Lycans.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/X-Men Origins: Wolverine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/X-Men: Apocalypse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/X-Men: Days of Future Past.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/X: First Class.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movieDB/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movieDB/pages/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/pages/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movieDB/pages/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/pages/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movieDB/pages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/pages/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,28 +32,7 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="pages_director: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="pages_movie: table" type="ffe0bd85:SqliteImplModel$Table" />
+        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
@@ -174,77 +57,79 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="4426" />
+          <entry key="html" value="4102" />
           <entry key="py" value="2373" />
           <entry key="py@CS411_Project" value="105" />
-          <entry key="txt" value="99" />
+          <entry key="txt" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CommandLine" value="105" />
-          <entry key="HTML" value="4426" />
-          <entry key="PLAIN_TEXT" value="99" />
+          <entry key="HTML" value="4102" />
+          <entry key="PLAIN_TEXT" value="61" />
           <entry key="Python" value="2373" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="16" />
+          <entry key="html" value="15" />
           <entry key="jpg" value="1" />
           <entry key="pages_movie" value="1" />
-          <entry key="py" value="12" />
+          <entry key="py" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="1" />
-          <entry key="HTML" value="16" />
+          <entry key="HTML" value="15" />
           <entry key="Image" value="1" />
-          <entry key="Python" value="12" />
+          <entry key="Python" value="11" />
         </counts>
       </usages-collector>
     </session>
     <session id="1926401797">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="5" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.11" value="6" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="2399" />
-          <entry key="py" value="926" />
-          <entry key="txt" value="190" />
+          <entry key="py" value="955" />
+          <entry key="txt" value="202" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="2399" />
-          <entry key="PLAIN_TEXT" value="190" />
-          <entry key="Python" value="926" />
+          <entry key="PLAIN_TEXT" value="202" />
+          <entry key="Python" value="955" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="3" />
+          <entry key="csv" value="6" />
           <entry key="html" value="26" />
           <entry key="jpg" value="1" />
-          <entry key="py" value="7" />
+          <entry key="py" value="9" />
+          <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="3" />
+          <entry key="CSV" value="6" />
           <entry key="HTML" value="26" />
           <entry key="Image" value="1" />
-          <entry key="Python" value="7" />
+          <entry key="Python" value="9" />
+          <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -252,19 +137,54 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/movie.html">
+        <entry file="file://$PROJECT_DIR$/movieDB/pages/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="25" column="79" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="79" />
+            <state relative-caret-position="394">
+              <caret line="101" column="28" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/new_movie.html">
+        <entry file="file://$PROJECT_DIR$/Data/movie_data_0325.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movieDB/pages/regressionModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="32" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="32" />
+            <state relative-caret-position="304">
+              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/movieDB/pages/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movieDB/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/movie.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="79" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -272,25 +192,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
+            <state relative-caret-position="165">
               <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/recommendation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="n#style#0;n#h5#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#3;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#5;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#6;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="900">
+              <caret line="214" selection-start-line="214" selection-end-line="214" />
             </state>
           </provider>
         </entry>
@@ -298,7 +210,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movieDB/movieDB/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
+            <state relative-caret-position="1845">
               <caret line="123" column="1" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
             </state>
           </provider>
@@ -307,20 +219,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-              <folding>
-                <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movieDB/pages/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            <state relative-caret-position="195">
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -354,15 +254,15 @@
         <option value="$PROJECT_DIR$/movieDB/pages/templates/insert_data.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/urls.py" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/footer.html" />
-        <option value="$PROJECT_DIR$/movieDB/pages/models.py" />
+        <option value="$PROJECT_DIR$/movieDB/pages/templates/base.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/home.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/director.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/actor.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/prediction.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/movie.html" />
-        <option value="$PROJECT_DIR$/movieDB/pages/views.py" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/recommendation.html" />
-        <option value="$PROJECT_DIR$/movieDB/pages/templates/base.html" />
+        <option value="$PROJECT_DIR$/movieDB/pages/views.py" />
+        <option value="$PROJECT_DIR$/movieDB/pages/models.py" />
       </list>
     </option>
   </component>
@@ -372,17 +272,17 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="134" />
-    <option name="y" value="24" />
-    <option name="width" value="1274" />
-    <option name="height" value="824" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -404,25 +304,12 @@
               <item name="CS411_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="CS411_Project" type="462c0819:PsiDirectoryNode" />
               <item name="movieDB" type="462c0819:PsiDirectoryNode" />
-              <item name="movieDB" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CS411_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS411_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="movieDB" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CS411_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS411_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="movieDB" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -438,6 +325,120 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/movieDB" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/movieDB/pages/__pycache__/views.cpython-36.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/movieDB/pages/__pycache__/views.cpython-37.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/movieDB/pages/regressionModel.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/movieDB/pages/templates/recommendation.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/movieDB/pages/views.py</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -536,20 +537,13 @@
       <option name="project" value="LOCAL" />
       <updated>1555526790138</updated>
     </task>
-    <task id="LOCAL-00008" summary="setting empty search result return">
-      <created>1555533188182</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1555533188183</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="827" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1904762" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19599427" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -560,18 +554,18 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4988662" weight="0.32891247" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011338" side_tool="true" weight="0.32891247" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49828473" weight="0.3237705" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49962208" weight="0.32891247" />
-      <window_info anchor="bottom" id="manage.py@CS411_Project" order="13" sideWeight="0.4988662" weight="0.33289126" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5028612" side_tool="true" weight="0.32336956" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49713877" visible="true" weight="0.32380953" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4985694" weight="0.32880434" />
+      <window_info active="true" anchor="bottom" id="manage.py@CS411_Project" order="13" sideWeight="0.4988662" visible="true" weight="0.33289126" />
       <window_info anchor="bottom" id="Database Console" order="14" sideWeight="0.49962208" weight="0.32891247" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32879817" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32761088" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" weight="0.19123206" />
@@ -613,8 +607,7 @@
     <MESSAGE value="revise database, admin, models, views.py and director, movie.html and director.csv" />
     <MESSAGE value="revise view.py, model.py" />
     <MESSAGE value="ellipsis and search fixed" />
-    <MESSAGE value="setting empty search result return" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting empty search result return" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/movieDB/static/images/UIUC.jpg">
@@ -643,6 +636,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/new_movie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/footer.html" />
     <entry file="file://$PROJECT_DIR$/Data/img/300: Rise of an Empire.jpg" />
     <entry file="file://$PROJECT_DIR$/Data/director.csv" />
@@ -654,7 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/star.csv" />
     <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/prediction.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -676,91 +675,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://bf2702e7-3c00-4f18-9616-d009d9e6ec3d/schema/main/table/pages_movie">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="das://bf2702e7-3c00-4f18-9616-d009d9e6ec3d/schema/main/table/pages_movie" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a4e059d0-1882-413d-8025-717e8df53902/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/star.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-633" />
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="150">
           <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/movieDB/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="123" column="1" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/movie.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="375">
           <caret line="25" column="79" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/models.py">
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="224" column="23" selection-start-line="224" selection-start-column="23" selection-end-line="224" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/new_movie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/recommendation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="n#style#0;n#h5#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#5;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#6;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="900">
+          <caret line="214" selection-start-line="214" selection-end-line="214" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/movieDB/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1845">
+          <caret line="123" column="1" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/regressionModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="101" column="28" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/movie_data_0325.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>

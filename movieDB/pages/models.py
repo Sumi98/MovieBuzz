@@ -12,9 +12,9 @@ class Movie(models.Model):
     duration = models.IntegerField(blank=True, null=True)
     genres = models.CharField(max_length=100)
     rating = models.FloatField(blank=True, null=True)
-    metascore = models.CharField(max_length=10, default='0')
+    metascore = models.IntegerField(blank=True, null=True, default=None)
     votes = models.IntegerField(blank=True, null=True)
-    gross_earning_in_mil = models.CharField(max_length=10, default='0')
+    gross_earning_in_mil = models.FloatField(blank=True, null=True, default=None)
     director = models.ForeignKey('Director', related_name='+', on_delete=models.CASCADE, null=True, blank=True)
     actor = models.ForeignKey('Actor', related_name='ActedBy+', on_delete=models.CASCADE, null=True, blank=True)
 

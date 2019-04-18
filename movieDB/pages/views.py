@@ -99,7 +99,7 @@ def movie(request):
             try:
                 earned = float(line['Gross_Earning_in_Mil'])
             except ValueError:
-                earned = 0
+                earned = 0.0
 
             tmp = Movie(movieid=line['Movie_ID'], 
                         year=line['Year'], 
