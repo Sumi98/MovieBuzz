@@ -221,6 +221,16 @@ def insert_data_submission(request):
     director_name = request.POST["director"]
     actor_name = request.POST.get("actor", False)
 
+    new_actor = Actor(name=actor_name)
+    new_director = Director(name=director_name)
+
+    new_actor.save()
+    new_director.save()
+
+    director_name = Director.objects.get(name=director_name)
+    actor_name = Actor.objects.get(name=actor_name)
+
+
     new_movie = Movie(title=title, year=year, genres=genres, description=descrption, director=director_name,
                       actor=actor_name)
     new_movie.save()
@@ -261,21 +271,21 @@ def new_movie(request):
 
 
 def delete_movie(request, pk):
-    # post = get_object_or_404(Movie, pk=pk)
-    # try:
-    #     if request.method == 'POST':
-    #         form = MovieForm(request.POST, instance=post)
-    #         post.delete()
-    #         messages.success(request, 'You have successfully deleted the movie')
-    #     else:
-    #         form = MovieForm(instance=post)
-    # except Exception as e:
-    #     messages.warning(request, 'The movie cannot be deleted: Error {}'.format(e))
-    # context = {
-    #     'form': form,
-    #     'post': post
-    # }
-    # return render(request, "new_movie.html", context)
+    post = get_object_or_404(Movie, pk=pk)
+    try:
+        if request.method == 'POST':
+            form = MovieForm(request.POST, instance=post)
+            post.delete()
+            messages.success(request, 'You have successfully deleted the movie')
+        else:
+            form = MovieForm(instance=post)
+    except Exception as e:
+        messages.warning(request, 'The movie cannot be deleted: Error {}'.format(e))
+    context = {
+        'form': form,
+        'post': post
+    }
+    return render(request, "new_movie.html", context)
     pass
 
 
