@@ -196,6 +196,7 @@ def prediction(request):
             LEFT JOIN pages_actor AS a ON a.name = m.actor_id) \
             WHERE m.title LIKE %s", [tep])
         limit_tuple = filter_data[:1] # get the first records
+        # title, year, rating, metascore, votes, genre, gross = None, None, None, None, None, None, None
         for movie in limit_tuple:
             title = movie.title
             year = movie.year
@@ -203,9 +204,9 @@ def prediction(request):
             metascore = movie.metascore
             votes = movie.votes
             genre = movie.genre
-            title = movie.title
             gross = movie.gross
-
+        # print(title, year, rating, metascore, votes, genre, gross)
+        
         # Build dataframe to be predicted
         genre_list = ['Action', 'Adventure',
         'Animation', 'Biography', 'Comedy', 'Crime', 'Drama', 'Family',
@@ -227,6 +228,7 @@ def prediction(request):
         'mse': mse,
         'box_offic': gross_template
         }
+    print(gross_template)
     return render(request, template, context)
 
 

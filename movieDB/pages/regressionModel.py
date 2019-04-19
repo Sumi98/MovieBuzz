@@ -32,8 +32,9 @@ def get_Movie_df(Movie):
     movie_df['MetScore'] = pd.Series(list(map(lambda x: int(x.metascore), Movie.objects.only("metascore"))))
     movie_df['Votes'] = pd.Series(list(map(lambda x: int(x.votes), Movie.objects.only("votes"))))
     movie_df['Earned'] = pd.Series(list(map(lambda x: float(x.gross_earning_in_mil), Movie.objects.only("gross_earning_in_mil"))))
-    movie_df['Actor'] = pd.Series(list(map(lambda x: x.actor, Movie.objects.only("actor"))))
-    movie_df['Director'] = pd.Series(list(map(lambda x: x.director, Movie.objects.only("director"))))
+    # movie_df['Actor'] = pd.Series(list(map(lambda x: x.actor, Movie.objects.only("actor"))))
+    # movie_df['Director'] = pd.Series(list(map(lambda x: x.director, Movie.objects.only("director"))))
+    # print(movie_df['Earned'])
     # Remove the row with 0 (originally None)
     movie_df.replace(0, np.nan, inplace=True)
     movie_df = movie_df.dropna()
@@ -45,7 +46,6 @@ def get_Movie_df(Movie):
     # print(movie_df['Year'])
 
     return movie_df
-    # pass
 
 def get_Actor_df(Actor):
     actor_df = pd.DataFrame()
@@ -74,7 +74,6 @@ def get_Director_df(Director):
     # print(masterpiece_tmp)
     director_df = director_df.join(masterpiece_tmp)
     return director_df
-    # pass
 
 def build_lg_model(Movie, Director, Actor):
     movie_df = get_Movie_df(Movie)
@@ -96,7 +95,8 @@ def build_lg_model(Movie, Director, Actor):
     # ['Year', 'Rating', 'MetScore', 'Votes', 'Action', 'Adventure',
     # 'Animation', 'Biography', 'Comedy', 'Crime', 'Drama', 'Family',
     # 'Fantasy', 'Horror', 'Mystery', 'Romance', 'Thriller']
-    X = movie_df.drop(['Genre', 'Title', 'Earned', 'Actor', 'Director'], axis = 1)
+    # X = movie_df.drop(['Genre', 'Title', 'Earned', 'Actor', 'Director'], axis = 1)
+    X = movie_df.drop(['Genre', 'Title', 'Earned'], axis = 1)
     y = movie_df.Earned
     # print(X.columns)
 
