@@ -62,11 +62,11 @@
               <h3 style="color: purple">Oops! It's new to us!</h3><br>
 
         </div>
-            
+
 
     {% endif %}
 
-    <script type="text/javascript"> 
+    <script type="text/javascript">
         var mW = 400;
         var mH = 400;
         var new_rating = "{{new_rating}}";
@@ -81,7 +81,7 @@
                                 ['gross', new_gross],
                                 ['director awards', new_d_award ],
                                 ['actor awards', new_a_award ]];
-        var mCount = mData.length; //边数 
+        var mCount = mData.length; //边数
         var mCenter = mW /2; //中心点
         var mRadius = mCenter - 50; //半径(减去的值用于给绘制的文本留空间)
         var mAngle = Math.PI * 2 / mCount; //角度
@@ -113,7 +113,7 @@
             var r = mRadius/ mCount; //单位半径
             //画6个圈
             for(var i = 0; i < mCount; i ++){
-                ctx.beginPath();        
+                ctx.beginPath();
                 var currR = r * ( i + 1); //当前半径
                 //画6条边
                 for(var j = 0; j < mCount; j ++){
@@ -162,11 +162,11 @@
                 var y = mCenter + mRadius * Math.sin(mAngle * i);
 
                 if( mAngle * i >= 0 && mAngle * i <= Math.PI / 2 ){
-                    ctx.fillText(mData[i][0], x, y + fontSize); 
+                    ctx.fillText(mData[i][0], x, y + fontSize);
                 }else if(mAngle * i > Math.PI / 2 && mAngle * i <= Math.PI){
-                    ctx.fillText(mData[i][0], x - ctx.measureText(mData[i][0]).width, y + fontSize);    
+                    ctx.fillText(mData[i][0], x - ctx.measureText(mData[i][0]).width, y + fontSize);
                 }else if(mAngle * i > Math.PI && mAngle * i <= Math.PI * 3 / 2){
-                    ctx.fillText(mData[i][0], x - ctx.measureText(mData[i][0]).width, y);   
+                    ctx.fillText(mData[i][0], x - ctx.measureText(mData[i][0]).width, y);
                 }else{
                     ctx.fillText(mData[i][0], x, y);
                 }
@@ -203,11 +203,11 @@
                 var x = mCenter + mRadius * Math.cos(mAngle * i) * mData[i][1] / 100;
                 var y = mCenter + mRadius * Math.sin(mAngle * i) * mData[i][1] / 100;
 
-                ctx.beginPath();            
+                ctx.beginPath();
                 ctx.arc(x, y, r, 0, Math.PI * 2);
                 ctx.fillStyle = 'rgba(255, 0, 0, 0.8)';
                 ctx.fill();
-            }       
+            }
 
             ctx.restore();
         }
