@@ -246,6 +246,16 @@ def insert_data_submission(request):
     director_name = request.POST["director"]
     actor_name = request.POST.get("actor", False)
 
+    new_actor = Actor(name=actor_name)
+    new_director = Director(name=director_name)
+
+    new_actor.save()
+    new_director.save()
+
+    director_name = Director.objects.get(name=director_name)
+    actor_name = Actor.objects.get(name=actor_name)
+
+
     new_movie = Movie(title=title, year=year, genres=genres, description=descrption, director=director_name,
                       actor=actor_name)
     new_movie.save()
@@ -309,16 +319,16 @@ def search(request):
     tep = "%%%s%%" % query
     filter_title = Director.objects.raw(
         "SELECT m.title AS title, d.name AS name, a.name AS star \
-        FROM ((pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id) \
-        LEFT JOIN pages_actor AS a ON a.name = m.actor_id) \
+        FROM pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id \
+        LEFT JOIN pages_actor AS a ON a.name = m.actor_id \
         WHERE m.title LIKE %s", [tep])
  
     filter_data = Director.objects.raw(
         "SELECT m.title AS title, m.rating AS rating, m.votes AS votes, m.metascore AS metascore, \
         m.gross_earning_in_mil AS gross, d.name AS name, d.award_win AS d_win, d.award_nom AS d_nom, \
         a.name AS star, a.award_win AS a_win, a.award_nom AS a_nom \
-        FROM ((pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id) \
-        LEFT JOIN pages_actor AS a ON a.name = m.actor_id) \
+        FROM pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id \
+        LEFT JOIN pages_actor AS a ON a.name = m.actor_id \
         WHERE m.title LIKE %s", [tep])
 
     limit_tuple = filter_data[:1]

@@ -3,105 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d52431cf-205d-42d5-97f6-a7525021b691" name="Default Changelist" comment="ellipsis">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/300: Rise of an Empire.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Abraham Lincoln: Vampire Hunter.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Alien: Covenant.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Alvin and the Chipmunks: The Squeakquel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Annabelle: Creation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Avengers: Age of Ultron.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Avengers: Infinity War.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Batman v Superman: Dawn of Justice.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Captain America: Civil War.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Captain America: The First Avenger.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Captain America: The Winter Soldier.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Dragonball: Evolution.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Exodus: Gods and Kings.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Fantastic Beasts: The Crimes of Grindelwald.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/G.I. Joe: Retaliation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/G.I. Joe: The Rise of Cobra.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Hachi: A Dog's Tale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Hansel &amp; Gretel: Witch Hunters.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Harry Potter and the Deathly Hallows: Part 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Harry Potter and the Deathly Hallows: Part 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Hellboy II: The Golden Army.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Hotel Transylvania 3: Summer Vacation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Independence Day: Resurgence.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Jack Reacher: Never Go Back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Jack Ryan: Shadow Recruit.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/John Wick: Chapter 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Journey 2: The Mysterious Island.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Jumanji: Welcome to the Jungle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Jurassic World: Fallen Kingdom.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Kill Bill: The Whole Bloody Affair.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/King Arthur: Legend of the Sword.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Kingsman: The Golden Circle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Kingsman: The Secret Service.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Kong: Skull Island.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Mad Max: Fury Road.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Madagascar: Escape 2 Africa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Maze Runner: The Scorch Trials.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Mechanic: Resurrection.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Mission: Impossible - Fallout.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Mission: Impossible - Ghost Protocol.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Mission: Impossible - Rogue Nation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Night at the Museum: Battle of the Smithsonian.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Night at the Museum: Secret of the Tomb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Nymphomaniac: Vol. I.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Nymphomaniac: Vol. II.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Percy Jackson &amp; the Olympians: The Lightning Thief.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Percy Jackson: Sea of Monsters.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Pirates of the Caribbean: Dead Men Tell No Tales.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Pirates of the Caribbean: On Stranger Tides.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Prince of Persia: The Sands of Time.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Punisher: War Zone.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Resident Evil: Afterlife.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Resident Evil: Retribution.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Resident Evil: The Final Chapter.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Sherlock Holmes: A Game of Shadows.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Sicario: Day of the Soldado.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Sin City: A Dame to Kill For.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Solo: A Star Wars Story.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Spider-Man: Homecoming.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Spider-Man: Into the Spider-Verse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Spy Kids 4: All the Time in the World.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Star Wars: Episode VII - The Force Awakens.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Star Wars: Episode VIII - The Last Jedi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Teenage Mutant Ninja Turtles: Out of the Shadows.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Boondock Saints II: All Saints Day.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Chronicles of Narnia: Prince Caspian.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Chronicles of Narnia: The Voyage of the Dawn Treader.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hobbit: An Unexpected Journey.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hobbit: The Battle of the Five Armies.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hobbit: The Desolation of Smaug.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hunger Games: Catching Fire.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hunger Games: Mockingjay - Part 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Hunger Games: Mockingjay - Part 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Huntsman: Winter's War.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Mortal Instruments: City of Bones.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Mummy: Tomb of the Dragon Emperor.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Purge: Anarchy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Purge: Election Year.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Raid: Redemption.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Twilight Saga: Breaking Dawn - Part 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Twilight Saga: Breaking Dawn - Part 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Twilight Saga: Eclipse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The Twilight Saga: New Moon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/The VVitch: A New-England Folktale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Thor: Ragnarok.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Thor: The Dark World.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Transformers: Age of Extinction.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Transformers: Dark of the Moon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Transformers: Revenge of the Fallen.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Transformers: The Last Knight.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Underworld: Blood Wars.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/Underworld: Rise of the Lycans.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/X-Men Origins: Wolverine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/X-Men: Apocalypse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/X-Men: Days of Future Past.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/img/X: First Class.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/movieDB/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movieDB/pages/templates/actor.html" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/pages/templates/actor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movieDB/pages/templates/director.html" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/pages/templates/director.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movieDB/pages/templates/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/pages/templates/movie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movieDB/pages/templates/recommendation.html" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/pages/templates/recommendation.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,20 +40,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="pages_director: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="pages_movie: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -160,56 +50,56 @@
     <session id="1085539905">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="4433" />
-          <entry key="py" value="2373" />
-          <entry key="py@CS411_Project" value="108" />
-          <entry key="txt" value="116" />
+          <entry key="html" value="4467" />
+          <entry key="py" value="2429" />
+          <entry key="py@CS411_Project" value="154" />
+          <entry key="txt" value="161" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CommandLine" value="108" />
-          <entry key="HTML" value="4433" />
-          <entry key="PLAIN_TEXT" value="116" />
-          <entry key="Python" value="2373" />
+          <entry key="CommandLine" value="154" />
+          <entry key="HTML" value="4467" />
+          <entry key="PLAIN_TEXT" value="161" />
+          <entry key="Python" value="2429" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="20" />
+          <entry key="html" value="22" />
           <entry key="jpg" value="1" />
           <entry key="pages_movie" value="1" />
-          <entry key="py" value="14" />
+          <entry key="py" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="1" />
-          <entry key="HTML" value="20" />
+          <entry key="HTML" value="22" />
           <entry key="Image" value="1" />
-          <entry key="Python" value="14" />
+          <entry key="Python" value="15" />
         </counts>
       </usages-collector>
     </session>
     <session id="1926401797">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="5" />
           <entry key="project.open.time.7" value="1" />
@@ -220,22 +110,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="2399" />
-          <entry key="py" value="926" />
-          <entry key="txt" value="190" />
+          <entry key="html" value="2404" />
+          <entry key="py" value="1446" />
+          <entry key="txt" value="218" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2399" />
-          <entry key="PLAIN_TEXT" value="190" />
-          <entry key="Python" value="926" />
+          <entry key="HTML" value="2404" />
+          <entry key="PLAIN_TEXT" value="218" />
+          <entry key="Python" value="1446" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="3" />
-          <entry key="html" value="26" />
+          <entry key="html" value="28" />
           <entry key="jpg" value="1" />
           <entry key="py" value="7" />
         </counts>
@@ -243,7 +133,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="3" />
-          <entry key="HTML" value="26" />
+          <entry key="HTML" value="28" />
           <entry key="Image" value="1" />
           <entry key="Python" value="7" />
         </counts>
@@ -251,79 +141,64 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/movie.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="83" column="27" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/movieDB/pages/views.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="604">
-                  <caret line="148" column="29" lean-forward="true" selection-start-line="148" selection-start-column="29" selection-end-line="148" selection-end-column="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/actor.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
-                  <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/base.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/director.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="267">
-                  <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/movieDB/pages/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/actor.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="224">
-                  <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/movieDB/pages/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5">
+              <caret line="201" column="63" lean-forward="true" selection-start-line="201" selection-start-column="63" selection-end-line="201" selection-end-column="63" />
+              <folding>
+                <marker date="1555647106000" expanded="true" signature="6521:6524" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/new_movie.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/movie.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/recommendation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <folding>
+                <element signature="n#style#0;n#h3#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#4;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#5;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -337,6 +212,7 @@
     <findStrings>
       <find>submitted</find>
       <find>Submitted</find>
+      <find>pages_director</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -350,17 +226,18 @@
         <option value="$PROJECT_DIR$/movieDB/pages/forms.py" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/new_movie.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/insert_data.html" />
-        <option value="$PROJECT_DIR$/movieDB/pages/urls.py" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/footer.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/models.py" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/home.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/prediction.html" />
+        <option value="$PROJECT_DIR$/movieDB/pages/templates/director.html" />
+        <option value="$PROJECT_DIR$/movieDB/pages/templates/actor.html" />
+        <option value="$PROJECT_DIR$/movieDB/pages/templates/base.html" />
+        <option value="$PROJECT_DIR$/movieDB/pages/templates/result.html" />
+        <option value="$PROJECT_DIR$/movieDB/pages/templates/recommendation.html" />
+        <option value="$PROJECT_DIR$/movieDB/pages/urls.py" />
         <option value="$PROJECT_DIR$/movieDB/pages/templates/movie.html" />
         <option value="$PROJECT_DIR$/movieDB/pages/views.py" />
-        <option value="$PROJECT_DIR$/movieDB/pages/templates/recommendation.html" />
-        <option value="$PROJECT_DIR$/movieDB/pages/templates/base.html" />
-        <option value="$PROJECT_DIR$/movieDB/pages/templates/actor.html" />
-        <option value="$PROJECT_DIR$/movieDB/pages/templates/director.html" />
       </list>
     </option>
   </component>
@@ -370,10 +247,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="134" />
-    <option name="y" value="24" />
-    <option name="width" value="1274" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
     <option name="height" value="824" />
   </component>
   <component name="ProjectView">
@@ -381,7 +257,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -418,16 +293,11 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CS411_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS411_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="movieDB" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -441,8 +311,828 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kao11\PycharmProjects\CS411_Project\movieDB" />
       <recent name="$PROJECT_DIR$/movieDB" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.DS_Store</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/movieDB/pages/__pycache__/models.cpython-36.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/movieDB/pages/__pycache__/models.cpython-37.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/movieDB/pages/__pycache__/views.cpython-36.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/movieDB/pages/__pycache__/views.cpython-37.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/movieDB/pages/regressionModel.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/movieDB/pages/templates/prediction.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/movieDB/pages/templates/recommendation.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/movieDB/pages/views.py</PATH>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/movieDB/db.sqlite3</PATH>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" />
+            <option name="myStatusName" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" />
+          <option name="myStatusName" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -555,28 +1245,51 @@
       <option name="project" value="LOCAL" />
       <updated>1555537112431</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="pagination for actor and director fixed">
+      <created>1555604202306</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1555604202306</updated>
+    </task>
+    <task id="LOCAL-00011" summary="revise insert_data function">
+      <created>1555647167558</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1555647167559</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19652306" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20457797" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32959327" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891247" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4988662" weight="0.32891247" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4988662" weight="0.32786885" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.329235" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011338" side_tool="true" weight="0.32891247" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49828473" weight="0.3237705" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49828473" weight="0.32240438" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49962208" weight="0.32891247" />
       <window_info anchor="bottom" id="manage.py@CS411_Project" order="13" sideWeight="0.4988662" visible="true" weight="0.33289126" />
       <window_info anchor="bottom" id="Database Console" order="14" sideWeight="0.49962208" weight="0.32891247" />
@@ -628,7 +1341,9 @@
     <MESSAGE value="ellipsis and search fixed" />
     <MESSAGE value="setting empty search result return" />
     <MESSAGE value="responsive navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="responsive navbar" />
+    <MESSAGE value="pagination for actor and director fixed" />
+    <MESSAGE value="revise insert_data function" />
+    <option name="LAST_COMMIT_MESSAGE" value="revise insert_data function" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/movieDB/static/images/UIUC.jpg">
@@ -643,13 +1358,6 @@
       </provider>
     </entry>
     <entry file="file://C:/Anaconda3/Lib/site-packages/django/core/handlers/base.py" />
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/insert_data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="23" selection-start-line="11" selection-start-column="12" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/delete_movie.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -661,13 +1369,6 @@
     <entry file="file://$PROJECT_DIR$/Data/img/300: Rise of an Empire.jpg" />
     <entry file="file://$PROJECT_DIR$/Data/director.csv" />
     <entry file="file://$PROJECT_DIR$/movieDB/pages/migrations/0001_initial.py" />
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/star.csv" />
     <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/prediction.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -676,13 +1377,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://bf2702e7-3c00-4f18-9616-d009d9e6ec3d/schema/main/table/pages_movie">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://bf2702e7-3c00-4f18-9616-d009d9e6ec3d/schema/main/table/pages_movie" />
     <entry file="file://$PROJECT_DIR$/movieDB/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -697,24 +1392,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/new_movie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/recommendation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -725,45 +1406,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/views.py">
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="148" column="29" lean-forward="true" selection-start-line="148" selection-start-column="29" selection-end-line="148" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/movie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="83" column="27" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="27" />
+        <state relative-caret-position="85">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/actor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+        <state relative-caret-position="998">
+          <caret line="75" column="10" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/director.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+        <state relative-caret-position="404">
+          <caret line="75" column="10" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/result.html" />
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/recommendation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#5;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/movie_list.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/insert_data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/new_movie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/movie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/pages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="201" column="63" lean-forward="true" selection-start-line="201" selection-start-column="63" selection-end-line="201" selection-end-column="63" />
+          <folding>
+            <marker date="1555647106000" expanded="true" signature="6521:6524" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
