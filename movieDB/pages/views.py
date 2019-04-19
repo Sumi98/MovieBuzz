@@ -222,13 +222,13 @@ def prediction(request):
         gross_template = [gross_predict[0], gross]
 
     context = {
-        'score': score,
+        'score': round(score, 3),
         'cols': paramters,
         'coefs': [ round(elem, 2) for elem in model_lg.coef_ ],
-        'mse': mse,
+        'mse': round(mse, 3),
         'box_offic': gross_template
         }
-    print(gross_template)
+    print([round(elem, 2) for elem in model_lg.coef_])
     return render(request, template, context)
 
 
