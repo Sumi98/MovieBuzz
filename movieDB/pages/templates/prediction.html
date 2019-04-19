@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load static %}
-{% get_static_prefix as STATIC_PREFIX %}
 
 {% block title %}
 
@@ -13,14 +12,14 @@
         background: mintcream url("{% static 'images/PredictionPage/background.jpg' %}") ;
     }
     th{
-        max-width: 120px;
+        max-width: 80px;
         text-align: center;
     }
     td{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 100px;
+        max-width: 80px;
     }
 </style>
 </head>
@@ -59,7 +58,7 @@
 	  padding: 8px;
 	}
 
-	/* Create 5 equal columns that floats next to each other */
+	/* Create 4 equal columns that floats next to each other */
 	.column {
 	  float: left;
 	  width: 25%;
@@ -107,188 +106,190 @@
 
 <!-- MAIN (Center website) -->
 <div class="main">
-<h1>Regression Analysis</h1>
-<hr>
-<h2>Model-based Prediction and Compare</h2>
-<form class="form-inline my-2 my-lg-0" method="GET">
-    <label> Enter full title name to predict box office </label>
-    <input class="form-control mr-sm-2" type="text" name="prediction" value="{{ request.GET.prediction }}" placeholder="Enter title here" aria-label="Search">
-    <button class="btn btn-primary" type="submit">Predict</button>
-</form>
-{% if box_offic %}
-<table class="table table-hover table-sm">
-    <thead class="thead-light" data-file-width="5px">
-    	    <tr>
-    	        <th scope="col">Predicted Box Office (Million)</th>
-    	    	<th scope="col">Actural Box Office (Million)</th>
-    	    </tr>
-    </thead>
-        <tr>
-    		{% for gross in box_offic %}
-            <th scope="col">{{ gross }}</th>
-        	{% endfor %}
-        </tr>
-    {% if search_title %}
-    <center>
-    <figure class="figure">
-      <img src="{% get_static_prefix %}images/poster/{{search_title}}.jpg" class="figure-img img-fluid rounded" alt="MoviePoster">
-      <figcaption class="figure-caption">{{search_title}}</figcaption>
-    </figure>
-    </center>
-    {% endif %}
-</table>
-{% endif %}
-<h2>Model Information</h2>
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn btn-primary" onclick="filterSelection('year')"> Release Year</button>
-  <button class="btn btn-primary" onclick="filterSelection('rating')"> Rating Related</button>
-  <button class="btn btn-primary" onclick="filterSelection('genre')"> Genres</button>
-  <button class="btn btn-primary" onclick="filterSelection('analysis')"> Model Analysis</button>
-</div>
+	<h1>Regression Analysis</h1>
+	<hr>
+	<h2>Model-based Prediction and Comparision</h2>
+	<form class="form-inline my-2 my-lg-0" method="GET">
+	    <label> Enter full title name to predict box office </label>
+	    <input class="form-control mr-sm-2" type="text" name="prediction" value="{{ request.GET.prediction }}" placeholder="Enter title here" aria-label="Search">
+	    <button class="btn btn-primary" type="submit">Predict</button>
+	</form>
+	{% if box_offic %}
+	<br>
+	<table class="table table-hover table-sm">
+	    <thead class="thead-light" data-file-width="5px">
+	    	    <tr>
+	    	        <th scope="col">Predicted Box Office (Million)</th>
+	    	    	<th scope="col">Actural Box Office (Million)</th>
+	    	    </tr>
+	    </thead>
+	        <tr>
+	    		{% for gross in box_offic %}
+	            <th scope="col">{{ gross }}</th>
+	        	{% endfor %}
+	        </tr>
+	    {% if search_title %}
+	    <center>
+	    <figure class="figure">
+	      <img src="{% get_static_prefix %}images/poster/{{search_title}}.jpg" class="figure-img img-fluid rounded" alt="MoviePoster">
+	      <figcaption class="figure-caption">{{search_title}}</figcaption>
+	    </figure>
+	    </center>
+	    {% endif %}
+	</table>
+	{% endif %}
+	<h2>Model Information</h2>
+	<div id="myBtnContainer">
+	  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+	  <button class="btn btn-primary" onclick="filterSelection('year')"> Release Year</button>
+	  <button class="btn btn-primary" onclick="filterSelection('rating')"> Rating Related</button>
+	  <button class="btn btn-primary" onclick="filterSelection('genre')"> Genres</button>
+	  <button class="btn btn-primary" onclick="filterSelection('analysis')"> Model Analysis</button>
+	</div>
 
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column year">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/1_year_OSCAR.jpg' %}" alt="Year" style="width:100%">
-      <h4>Release Year</h4>
-      <p> Regression weight is {{ coefs.0}} </p>
-    </div>
-  </div>
-  <div class="column rating">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/2_imdb_rating.jpg' %}" alt="Lights" style="width:100%">
-      <h4>IMDB Rating</h4>
-      <p>Regression weight is {{ coefs.1}} </p>
-    </div>
-  </div>
-  <div class="column rating">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/3_metScore.png' %}" alt="Nature" style="width:100%">
-      <h4>Rotten Tomato</h4>
-      <p>Regression weight is {{ coefs.2}}</p>
-    </div>
-  </div>
+	<br>
+	<!-- Portfolio Gallery Grid -->
+	<div class="row">
+	  <div class="column year">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/1_year_OSCAR.jpg' %}" alt="Year" style="width:100%">
+	      <h4>Release Year</h4>
+	      <p> Regression weight is {{ coefs.0}} </p>
+	    </div>
+	  </div>
+	  <div class="column rating">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/2_imdb_rating.jpg' %}" alt="Lights" style="width:100%">
+	      <h4>IMDB Rating</h4>
+	      <p>Regression weight is {{ coefs.1}} </p>
+	    </div>
+	  </div>
+	  <div class="column rating">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/3_metScore.png' %}" alt="Nature" style="width:100%">
+	      <h4>Rotten Tomato</h4>
+	      <p>Regression weight is {{ coefs.2}}</p>
+	    </div>
+	  </div>
 
-  <div class="column rating">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/4_votes.png' %}" alt="Car" style="width:100%">
-      <p></p>
-      <h4>IMDB Votes</h4>
-      <p>Regression weight is {{ coefs.3}}</p>
-    </div>
-  </div>
-  <div class="column genre">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/5_Action2.jpg' %}" alt="Car" style="width:100%">
-      <p></p>
-      <h4>Action</h4>
-      <p>Regression weight is {{ coefs.4}}</p>
-    </div>
-  </div>
-  <div class="column genre">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/6_Adventure2.jpg' %}" alt="Car" style="width:100%">
-      <h4>Adventure</h4>
-      <p>Regression weight is {{ coefs.5}}</p>
-    </div>
-  </div>
+	  <div class="column rating">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/4_votes.png' %}" alt="Car" style="width:100%">
+	      <p></p>
+	      <h4>IMDB Votes</h4>
+	      <p>Regression weight is {{ coefs.3}}</p>
+	    </div>
+	  </div>
+	  <div class="column genre">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/5_Action2.jpg' %}" alt="Car" style="width:100%">
+	      <p></p>
+	      <h4>Action</h4>
+	      <p>Regression weight is {{ coefs.4}}</p>
+	    </div>
+	  </div>
+	  <div class="column genre">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/6_Adventure2.jpg' %}" alt="Car" style="width:100%">
+	      <h4>Adventure</h4>
+	      <p>Regression weight is {{ coefs.5}}</p>
+	    </div>
+	  </div>
 
-  <div class="column genre">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/7_Animation.jpg' %}" alt="People" style="width:100%">
-      <p></p>
-      <h4>Animation</h4>
-      <p>Regression weight is {{ coefs.6}}</p>
-    </div>
-  </div>
-  <div class="column genre">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/8_Bilb.jpg' %}" alt="People" style="width:100%">
-      <h4>Biography</h4>
-      <p>Regression weight is {{ coefs.7}}</p>
-    </div>
-  </div>
-  <div class="column genre">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/9_Commdy.jpg' %}" alt="People" style="width:100%">
-      <h4>Comedy</h4>
-      <p>Regression weight is {{ coefs.8}}</p>
-    </div>
-  </div>
-  <div class="column genre">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/10_crime1.jpg' %}" alt="People" style="width:100%">
-      <h4>Crime</h4>
-      <p>Regression weight is {{ coefs.9}}</p>
-    </div>
-  </div>
-  <div class="column genre">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/11_Drama.jpg' %}" alt="People" style="width:100%">
-      <h4>Drama</h4>
-      <p>Regression weight is {{ coefs.10}}</p>
-    </div>
-  </div>
-  <div class="column genre">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/12_family.jpg' %}" alt="People" style="width:100%">
-      <h4>Family</h4>
-      <p>Regression weight is {{ coefs.11}}</p>
-    </div>
-  </div>
-  <div class="column genre">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/13_fanticis.jpg' %}" alt="People" style="width:100%">
-      <h4>Fantasy</h4>
-      <p>Regression weight is {{ coefs.12}}</p>
-    </div>
-  </div>
-  <div class="column genre">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/14_horror.jpg' %}" alt="People" style="width:100%">
-      <h4>Horror</h4>
-      <p>Regression weight is {{ coefs.13}}</p>
-    </div>
-  </div>
-  <div class="column genre">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/15_mestory.jpg' %}" alt="People" style="width:100%">
-      <h4>Mystery</h4>
-      <p>Regression weight is {{ coefs.14}}</p>
-    </div>
-  </div>
-  <div class="column genre">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/16_Romance.jpg' %}" alt="People" style="width:100%">
-      <h4>Romance</h4>
-      <p>Regression weight is {{ coefs.15}}</p>
-    </div>
-  </div>
-  <div class="column genre">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/17_Thriller.jpg' %}" alt="People" style="width:100%">
-      <h4>Thriller</h4>
-      <p>Regression weight is {{ coefs.16}}</p>
-    </div>
-  </div>
-  <div class="column analysis">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/model_mse.jpg' %}" alt="People" style="width:100%">
-      <h4>Mean Square Error</h4>
-      <p>{{ mse}}</p>
-    </div>
-  </div>
-  <div class="column analysis">
-    <div class="content">
-      <img src="{% static 'images/PredictionPage/model_r2.jpg' %}" alt="People" style="width:100%">
-      <h4>R2 Score</h4>
-      <p>{{score}}</p>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
+	  <div class="column genre">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/7_Animation.jpg' %}" alt="People" style="width:100%">
+	      <p></p>
+	      <h4>Animation</h4>
+	      <p>Regression weight is {{ coefs.6}}</p>
+	    </div>
+	  </div>
+	  <div class="column genre">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/8_Bilb.jpg' %}" alt="People" style="width:100%">
+	      <h4>Biography</h4>
+	      <p>Regression weight is {{ coefs.7}}</p>
+	    </div>
+	  </div>
+	  <div class="column genre">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/9_Commdy.jpg' %}" alt="People" style="width:100%">
+	      <h4>Comedy</h4>
+	      <p>Regression weight is {{ coefs.8}}</p>
+	    </div>
+	  </div>
+	  <div class="column genre">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/10_crime1.jpg' %}" alt="People" style="width:100%">
+	      <h4>Crime</h4>
+	      <p>Regression weight is {{ coefs.9}}</p>
+	    </div>
+	  </div>
+	  <div class="column genre">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/11_Drama.jpg' %}" alt="People" style="width:100%">
+	      <h4>Drama</h4>
+	      <p>Regression weight is {{ coefs.10}}</p>
+	    </div>
+	  </div>
+	  <div class="column genre">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/12_family.jpg' %}" alt="People" style="width:100%">
+	      <h4>Family</h4>
+	      <p>Regression weight is {{ coefs.11}}</p>
+	    </div>
+	  </div>
+	  <div class="column genre">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/13_fanticis.jpg' %}" alt="People" style="width:100%">
+	      <h4>Fantasy</h4>
+	      <p>Regression weight is {{ coefs.12}}</p>
+	    </div>
+	  </div>
+	  <div class="column genre">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/14_horror.jpg' %}" alt="People" style="width:100%">
+	      <h4>Horror</h4>
+	      <p>Regression weight is {{ coefs.13}}</p>
+	    </div>
+	  </div>
+	  <div class="column genre">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/15_mestory.jpg' %}" alt="People" style="width:100%">
+	      <h4>Mystery</h4>
+	      <p>Regression weight is {{ coefs.14}}</p>
+	    </div>
+	  </div>
+	  <div class="column genre">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/16_Romance.jpg' %}" alt="People" style="width:100%">
+	      <h4>Romance</h4>
+	      <p>Regression weight is {{ coefs.15}}</p>
+	    </div>
+	  </div>
+	  <div class="column genre">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/17_Thriller.jpg' %}" alt="People" style="width:100%">
+	      <h4>Thriller</h4>
+	      <p>Regression weight is {{ coefs.16}}</p>
+	    </div>
+	  </div>
+	  <div class="column analysis">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/model_mse.jpg' %}" alt="People" style="width:100%">
+	      <h4>Mean Square Error</h4>
+	      <p>{{ mse}}</p>
+	    </div>
+	  </div>
+	  <div class="column analysis">
+	    <div class="content">
+	      <img src="{% static 'images/PredictionPage/model_r2.jpg' %}" alt="People" style="width:100%">
+	      <h4>R2 Score</h4>
+	      <p>{{score}}</p>
+	    </div>
+	  </div>
+	<!-- END GRID -->
+	</div>
 <!-- END MAIN -->
 </div>
 

@@ -6,8 +6,10 @@
 {% endblock %}
 
 {% block content %}
-
-  {% if filter_title %}
+<div class="main">
+    {% if filter_title %}
+    <br>
+    <br>
         <style>
             th{
                 max-width: 80px;
@@ -17,7 +19,7 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                max-width: 80px;
+                max-width: 100px;
             }
         </style>
         <table class="table table-hover table-sm">
@@ -36,6 +38,14 @@
                     <td> {{ movie.star }}</td>
                 </tr>
             {% endfor %}
+            {% for movie in filter_title %}
+                {% if movie.title %}
+                <figure class="figure">
+                  <img src="{% get_static_prefix %}images/poster/{{movie.title}}.jpg" class="figure-img img-fluid rounded" alt="MoviePoster" hspace="20">
+                  <figcaption class="figure-caption" style="text-align: center">{{movie.title}}</figcaption>
+                </figure>
+                {% endif %}
+            {% endfor %}
             </tbody>
         </table>
             <h3>{{ filter_title.name }}</h3><br>
@@ -50,8 +60,6 @@
 {#              <h3 style="color: purple">Oops! It's new to us!</h3><br>#}
 {##}
 {#        </div>#}
-
-
     {% endif %}
 
     <script type="text/javascript">
@@ -63,12 +71,12 @@
         var new_a_award = "{{new_a_award}}"
         var new_metascore = "{{new_metascore}}"
         var new_gross = "{{new_gross}}"
-        var mData = [['rating', new_rating],
-                                ['votes', new_votes ],
-                                ['metoscore', new_metascore],
-                                ['gross', new_gross],
-                                ['director awards', new_d_award ],
-                                ['actor awards', new_a_award ]];
+        var mData = [['Rating', new_rating],
+                                ['Votes', new_votes ],
+                                ['Metoscore', new_metascore],
+                                ['Gross', new_gross],
+                                ['Director Awards', new_d_award ],
+                                ['Actor awards', new_a_award ]];
         var mCount = mData.length; //number of sides
         var mCenter = mW /2; //center
         var mRadius = mCenter - 50; //radius
@@ -201,5 +209,5 @@
         }
 
     </script>
-
+</div>
 {% endblock %}

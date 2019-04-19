@@ -22,7 +22,7 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-4">Welcome to Movie Database</h1>
-                <p class="lead">The goal of website is to provide the relevant information and predict the box office</p>
+                <i class="lead" >Frankly, my dear, it is something...</i>
             </div>
         </div>
 
@@ -33,24 +33,24 @@
                 <img src="{% static 'images/movie_img.jpeg' %}" class="card-img-top" alt="..." height="350px">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Movies</h5>
-                    <p class="card-text">The movies contains 13 attributes,including movie title, movie type, director and actor etc.</p>
-                    <a href="{% url 'movie' %}" class="btn btn-primary btn-lg btn-block mt-auto">Info</a>
+                    <p class="card-text">Shows the title, type, director and actor of movies.</p>
+                    <a href="{% url 'movie' %}" class="btn btn-primary btn-lg btn-block mt-auto">More Details</a>
                 </div>
             </div>
             <div class="card">
                 <img src="{% static 'images/actor_img.jpg' %}" class="card-img-top" alt="..." height="350px">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Actors</h5>
-                    <p class="card-text">The actors contains 6 attributes,including name, date and award_wins etc.</p>
-                    <a href="{% url 'actor' %}" class="btn btn-primary btn-lg btn-block mt-auto">Info</a>
+                    <p class="card-text">Shows the name, birthday and won awards of directors.</p>
+                    <a href="{% url 'actor' %}" class="btn btn-primary btn-lg btn-block mt-auto">More Details</a>
                 </div>
             </div>
             <div class="card">
                 <img src="{% static 'images/director_img.jpg' %}" class="card-img-top" alt="..." height="350px">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Directors</h5>
-                    <p class="card-text">The directors contains 13 attributes,including name, date and award_wins etc.</p>
-                    <a href="{% url 'director' %}" class="btn btn-primary btn-lg btn-block mt-auto">Info</a>
+                    <p class="card-text">Shows the name, birthday and won awards of actors.</p>
+                    <a href="{% url 'director' %}" class="btn btn-primary btn-lg btn-block mt-auto">More Details</a>
                 </div>
             </div>
         </div>

@@ -15,6 +15,7 @@
   <style>
       body {
           background: mintcream url("{% static 'images/PredictionPage/background.jpg' %}") ;
+          background-attachment: fixed;
       }
       th{
           max-width: 120px;
@@ -28,9 +29,88 @@
       }
   </style>
   </head>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>   
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-family: Arial;
+    }
+
+    /* Center website */
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
+
+    .row {
+      margin: 10px -16px;
+    }
+
+    /* Add padding BETWEEN each column */
+    .row,
+    .row > .column {
+      padding: 8px;
+    }
+
+    /* Create 4 equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+      display: none; /* Hide all elements by default */
+    }
+
+    /* Clear floats after rows */ 
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
+
+    /* The "show" class is added to the filtered elements */
+    .show {
+      display: block;
+    }
+
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      /*background-color: #4CAF50;*/
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+  </style>
+  </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightyellow">
-        <span class="navbar-brand">MovieDB</span>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fc; border:none">
+        <a class="navbar-brand" href="{% url 'home' %}">
+        <span class="navbar-brand">MovieDB</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -99,7 +179,7 @@
             </ul>
             <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'search' %}">
                 <input class="form-control mr-sm-2" type="text" name="q" value="{{ request.GET.q }}" placeholder="Search movie title..." aria-label="Search">
-                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" style = "background-color: #d8ebfc; border:none">Search</button>
             </form>
         </div>
     </nav>
