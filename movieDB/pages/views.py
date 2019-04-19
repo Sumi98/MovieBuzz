@@ -8,6 +8,14 @@ from .regressionModel import build_lg_model
 import csv, os
 from .forms import MovieForm
 from django.core.paginator import Paginator
+from itertools import repeat
+import numpy as np
+import pandas as pd
+
+# enable results in terminal
+import django
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "myapp.settings")
+django.setup()
 
 def home(request):
     return render(request, "home.html", {})
@@ -166,41 +174,58 @@ def actor(request):
 
     return render(request, "actor.html", {'Actor': actors})
 
-def prediction_search(Movie):
-    
-
-    return title, genre, gross, [year, rating, metascore, votes]
-
 def prediction(request):
     template = "prediction.html"
+    gross_template = None
     # the model
-    model_lg, paramters, mse, score, y_predict, y_test = build_lg_model(Movie, Director, Actor)
+    model_lg, paramters, mse, score, y_predict, y_test= build_lg_model(Movie, Director, Actor)
 
     # the movie to be predicted
-    query = request.GET.get('q')
-    tep = "%%%s%%" % query
-    filter_data = Movie.objects.raw(
-        "SELECT m.title AS title, m.year AS year, m.rating AS rating, m.votes AS votes, m.metascore AS metascore, m.genres AS genre \
-                m.gross_earning_in_mil AS gross \
-                FROM pages_movie AS m WHERE m.title LIKE %s", [tep])
-    limit_tuple = filter_data[:1]
-    for movie in limit_tuple:
-        year = movie.year
-        rating = movie.rating
-        metascore = movie.metascore
-        votes = movie.votes
-        genre = movie.genre
-        title = movie.title
-        gross = movie.gross
+    if request.GET.get('prediction'):
+        query = request.GET.get('prediction')
+        tep = "%%%s%%" % query
+        # filter_data = Movie.objects.raw(
+        #     "SELECT m.title AS title, m.year AS year, m.rating AS rating, m.votes AS votes, m.metascore AS metascore, m.genres AS genre \
+        #             m.gross_earning_in_mil AS gross \
+        #             FROM pages_movie AS m WHERE m.title LIKE %s", [tep])
+        filter_data = Director.objects.raw(
+            "SELECT m.title AS title, m.year AS year, m.rating AS rating, m.votes AS votes, m.metascore AS metascore, \
+            m.gross_earning_in_mil AS gross, m.genres AS genre, d.name AS name, d.award_win AS d_win, d.award_nom AS d_nom, \
+            a.name AS star, a.award_win AS a_win, a.award_nom AS a_nom \
+            FROM ((pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id) \
+            LEFT JOIN pages_actor AS a ON a.name = m.actor_id) \
+            WHERE m.title LIKE %s", [tep])
+        limit_tuple = filter_data[:1] # get the first records
+        for movie in limit_tuple:
+            title = movie.title
+            year = movie.year
+            rating = movie.rating
+            metascore = movie.metascore
+            votes = movie.votes
+            genre = movie.genre
+            title = movie.title
+            gross = movie.gross
 
-    # Build dataframe to be predicted
-    
+        # Build dataframe to be predicted
+        genre_list = ['Action', 'Adventure',
+        'Animation', 'Biography', 'Comedy', 'Crime', 'Drama', 'Family',
+        'Fantasy', 'Horror', 'Mystery', 'Romance', 'Thriller']
+        genre_index = genre_list.index(genre)
+        tmp_list = list(repeat(0, len(genre_list)))
+        tmp_list[genre_index] = 1
+        predict_df = pd.DataFrame(columns = ['Year', 'Rating', 'MetScore','Votes', 'Action', 'Adventure',
+            'Animation', 'Biography', 'Comedy', 'Crime', 'Drama', 'Family',
+            'Fantasy', 'Horror', 'Mystery', 'Romance', 'Thriller'])
+        predict_df.loc[0] = [year, rating, metascore, votes] + tmp_list
+        gross_predict = model_lg.predict(predict_df)
+        gross_template = [gross_predict[0], gross]
 
     context = {
         'score': score,
         'cols': paramters,
         'coefs': [ round(elem, 2) for elem in model_lg.coef_ ],
-        'mse': mse
+        'mse': mse,
+        'box_offic': gross_template
         }
     return render(request, template, context)
 
@@ -261,23 +286,21 @@ def new_movie(request):
 
 
 def delete_movie(request, pk):
-    # post = get_object_or_404(Movie, pk=pk)
-    # try:
-    #     if request.method == 'POST':
-    #         form = MovieForm(request.POST, instance=post)
-    #         post.delete()
-    #         messages.success(request, 'You have successfully deleted the movie')
-    #     else:
-    #         form = MovieForm(instance=post)
-    # except Exception as e:
-    #     messages.warning(request, 'The movie cannot be deleted: Error {}'.format(e))
-    # context = {
-    #     'form': form,
-    #     'post': post
-    # }
-    # return render(request, "new_movie.html", context)
-    pass
-
+    post = get_object_or_404(Movie, pk=pk)
+    try:
+        if request.method == 'POST':
+            form = MovieForm(request.POST, instance=post)
+            post.delete()
+            messages.success(request, 'You have successfully deleted the movie')
+        else:
+            form = MovieForm(instance=post)
+    except Exception as e:
+        messages.warning(request, 'The movie cannot be deleted: Error {}'.format(e))
+    context = {
+        'form': form,
+        'post': post
+    }
+    return render(request, "new_movie.html", context)
 
 def search(request):
     template = 'recommendation.html'

@@ -39,8 +39,40 @@
         {% endfor %}
         </tr>
     </table>
+
 <h3>Mean Square Error</h3>
 <li> {{ mse }} </li>
+
 <h3>R2 Score</h3>
 <li> {{ score }} </li>
+<br>
+<br>
+<h3>Model-based Prediction and Compare</h3>
+<form class="form-inline my-2 my-lg-0" method="GET">
+    Enter full title name to predict box office: 
+    <input class="form-control mr-sm-2" type="text" name="prediction" value="{{ request.GET.prediction }}" placeholder="Enter title here" aria-label="Search">
+    <button class="btn btn-primary" type="submit">Predict</button>
+</form>
+{% if gross_template %}
+<table class="table table-hover table-sm">
+    <thead class="thead-light" data-file-width="5px">
+    	    <tr>
+    	        <th scope="col">Predicted Box Office (Million)</th>
+    	    	<th scope="col">Actural Box Office (Million)</th>
+    	    </tr>
+    </thead>
+        <tr>
+    		{% for gross in box_offic %}
+            <th scope="col">{{ gross }}</th>
+        	{% endfor %}
+        </tr>
+</table>
+{% endif %}
+
+<br>
+<br>
 {% endblock %}
+
+
+
+

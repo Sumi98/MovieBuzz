@@ -1,9 +1,10 @@
 import os
 import pip
-# enable relect results in terminal
+# enable results in terminal
 import django
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "myapp.settings")
 django.setup()
+
 from pages.models import Movie, Director, Actor
 
 import numpy as np
