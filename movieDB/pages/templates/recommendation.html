@@ -52,20 +52,21 @@
         </table>
             <h3>{{ filter_title.name }}</h3><br>
     {% else %}
-        <div class="container" align="center">
-              <h3 style="color: red">Oops! It's new to us!</h3><br>
-              <h3 style="color: orange">Oops! It's new to us!</h3><br>
-              <h3 style="color: yellow">Oops! It's new to us!</h3><br>
-              <h3 style="color: green">Oops! It's new to us!</h3><br>
-              <a href="{% url 'insert_data' %}"><h3>Let's add a new one!</h3></a><br>
-              <h3 style="color: indigo">Oops! It's new to us!</h3><br>
-              <h3 style="color: purple">Oops! It's new to us!</h3><br>
-
-        </div>
+{#        <div class="container" align="center">#}
+{#              <h3 style="color: red">Oops! It's new to us!</h3><br>#}
+{#              <h3 style="color: orange">Oops! It's new to us!</h3><br>#}
+{#              <h3 style="color: yellow">Oops! It's new to us!</h3><br>#}
+{#              <h3 style="color: green">Oops! It's new to us!</h3><br>#}
+{#              <a href="{% url 'insert_data' %}"><h3>Let's add a new one!</h3></a><br>#}
+{#              <h3 style="color: indigo">Oops! It's new to us!</h3><br>#}
+{#              <h3 style="color: purple">Oops! It's new to us!</h3><br>#}
+{##}
+{#        </div>#}
 
 
     {% endif %}
 
+    <div align="center" style="align-self: center">
     <script type="text/javascript">
         var mW = 400;
         var mH = 400;
@@ -212,6 +213,6 @@
             ctx.restore();
         }
 
-    </script>
+    </script></div>
 
 {% endblock %}
