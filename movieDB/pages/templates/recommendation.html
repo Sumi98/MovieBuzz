@@ -43,11 +43,6 @@
                     <td> {{ movie.star }}</td>
                 </tr>
             {% endfor %}
-            <!-- {% for movie in limit_tuple %} -->
-
-                <td> {{ new_gross }} </td>
-
-            <!-- {% endfor %} -->
             </tbody>
         </table>
             <h3>{{ filter_title.name }}</h3><br>
@@ -66,6 +61,7 @@
 
     {% endif %}
 
+<div style="width:1024px; margin:auto;">
     <script type="text/javascript">
         var mW = 400;
         var mH = 400;
@@ -81,16 +77,16 @@
                                 ['gross', new_gross],
                                 ['director awards', new_d_award ],
                                 ['actor awards', new_a_award ]];
-        var mCount = mData.length; //边数
-        var mCenter = mW /2; //中心点
-        var mRadius = mCenter - 50; //半径(减去的值用于给绘制的文本留空间)
-        var mAngle = Math.PI * 2 / mCount; //角度
+        var mCount = mData.length; //number of sides
+        var mCenter = mW /2; //center
+        var mRadius = mCenter - 50; //radius
+        var mAngle = Math.PI * 2 / mCount; //angle
         var mCtx = null;
-        var mColorPolygon = '#B8B8B8'; //多边形颜色
-        var mColorLines = '#B8B8B8'; //顶点连线颜色
+        var mColorPolygon = '#B8B8B8'; //color of polygon
+        var mColorLines = '#B8B8B8'; // color of lined
         var mColorText = '#000000';
 
-        //初始化
+        //initial set
         (function(){
           var canvas = document.createElement('canvas');
           document.body.appendChild(canvas);
@@ -105,16 +101,16 @@
           drawCircle(mCtx);
         })();
 
-          // 绘制多边形边
+          // plot ploygon
           function drawPolygon(ctx){
             ctx.save();
 
             ctx.strokeStyle = mColorPolygon;
-            var r = mRadius/ mCount; //单位半径
+            var r = mRadius/ mCount; //unit radiu
             //画6个圈
             for(var i = 0; i < mCount; i ++){
                 ctx.beginPath();
-                var currR = r * ( i + 1); //当前半径
+                var currR = r * ( i + 1); //current radiu
                 //画6条边
                 for(var j = 0; j < mCount; j ++){
                     var x = mCenter + currR * Math.cos(mAngle * j);
@@ -129,7 +125,7 @@
             ctx.restore();
           }
 
-        //顶点连线
+        //Draw lines
         function drawLines(ctx){
             ctx.save();
 
@@ -149,7 +145,7 @@
             ctx.restore();
         }
 
-        //绘制文本
+        //Draw text
         function drawText(ctx){
             ctx.save();
 
@@ -176,7 +172,7 @@
             ctx.restore();
         }
 
-        //绘制数据区域
+        //draw region
         function drawRegion(ctx){
             ctx.save();
 
@@ -194,7 +190,7 @@
             ctx.restore();
         }
 
-        //画点
+        //draw points
         function drawCircle(ctx){
             ctx.save();
 
@@ -211,7 +207,7 @@
 
             ctx.restore();
         }
-
     </script>
+</div>
 
 {% endblock %}
