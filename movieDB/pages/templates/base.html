@@ -169,11 +169,11 @@
                 {% url 'recommendation' as url_recommendation %}
                 {% if request.get_full_path == url_recommendation %}
                     <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'recommendation' %}">Insider</a>
+                        <a class="nav-link active" href="{% url 'recommendation' %}">Visualization</a>
                     </li>
                 {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'recommendation' %}">Insider</a>
+                        <a class="nav-link" href="{% url 'recommendation' %}">Visualization</a>
                     </li>
                 {% endif %}
             </ul>

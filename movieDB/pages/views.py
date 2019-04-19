@@ -250,7 +250,7 @@ def insert_data_submission(request):
     genres = request.POST["type"]
     descrption = request.POST["description"]
     director_name = request.POST["director"]
-    actor_name = request.POST.get("actor", False)
+    actor_name = request.POST["actor"]
 
     new_actor = Actor(name=actor_name)
     new_director = Director(name=director_name)
