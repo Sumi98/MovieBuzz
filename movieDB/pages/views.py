@@ -6,6 +6,7 @@ from .regressionModel import build_lg_model
 
 
 import csv, os
+from os.path import join
 from .forms import MovieForm
 from django.core.paginator import Paginator
 from itertools import repeat
@@ -177,8 +178,9 @@ def actor(request):
 def prediction(request):
     template = "prediction.html"
     gross_template = None
+    title = '9' # default is '9.jpg' in prediction.html
     # the model
-    model_lg, paramters, mse, score, y_predict, y_test= build_lg_model(Movie, Director, Actor)
+    model_lg, paramters, mse, score = build_lg_model(Movie, Director, Actor)
 
     # the movie to be predicted
     if request.GET.get('prediction'):
@@ -197,6 +199,7 @@ def prediction(request):
             WHERE m.title LIKE %s", [tep])
         limit_tuple = filter_data[:1] # get the first records
         # title, year, rating, metascore, votes, genre, gross = None, None, None, None, None, None, None
+        # print(limit_tuple)
         for movie in limit_tuple:
             title = movie.title
             year = movie.year
@@ -205,7 +208,6 @@ def prediction(request):
             votes = movie.votes
             genre = movie.genre
             gross = movie.gross
-        # print(title, year, rating, metascore, votes, genre, gross)
         
         # Build dataframe to be predicted
         genre_list = ['Action', 'Adventure',
@@ -226,9 +228,11 @@ def prediction(request):
         'cols': paramters,
         'coefs': [ round(elem, 2) for elem in model_lg.coef_ ],
         'mse': round(mse, 3),
-        'box_offic': gross_template
+        'box_offic': gross_template,
+        'search_title': title,
+        'poster_path': join('images','poster', title + '.jpg')
         }
-    print([round(elem, 2) for elem in model_lg.coef_])
+    print(join('images','poster', title + '.jpg'))
     return render(request, template, context)
 
 

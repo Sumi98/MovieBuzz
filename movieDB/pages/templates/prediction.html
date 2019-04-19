@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
 
 {% block title %}
 
@@ -127,6 +128,14 @@
             <th scope="col">{{ gross }}</th>
         	{% endfor %}
         </tr>
+    {% if search_title %}
+    <center>
+    <figure class="figure">
+      <img src="{% get_static_prefix %}images/poster/{{search_title}}.jpg" class="figure-img img-fluid rounded" alt="MoviePoster">
+      <figcaption class="figure-caption">{{search_title}}</figcaption>
+    </figure>
+    </center>
+    {% endif %}
 </table>
 {% endif %}
 <h2>Model Information</h2>

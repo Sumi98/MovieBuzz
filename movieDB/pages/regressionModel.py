@@ -118,7 +118,7 @@ def build_lg_model(Movie, Director, Actor):
     score = model_lg.score(X_test, y_test)
     # predict
     
-    return model_lg, X_test.columns, regression_model_mse, score, y_predict, y_test
+    return model_lg, X_test.columns, regression_model_mse, score
 
 # movie_df = get_Movie_df(Movie)
 # print(movie_df[:5])
