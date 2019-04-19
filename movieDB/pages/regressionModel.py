@@ -91,8 +91,13 @@ def build_lg_model(Movie, Director, Actor):
     #     filter_data.append(list(records))
     # code above still has error
 
+    # X columns:
+    # ['Year', 'Rating', 'MetScore', 'Votes', 'Action', 'Adventure',
+    # 'Animation', 'Biography', 'Comedy', 'Crime', 'Drama', 'Family',
+    # 'Fantasy', 'Horror', 'Mystery', 'Romance', 'Thriller']
     X = movie_df.drop(['Genre', 'Title', 'Earned', 'Actor', 'Director'], axis = 1)
     y = movie_df.Earned
+    # print(X.columns)
 
     model_lg = LinearRegression()
     # scores = []
@@ -112,15 +117,7 @@ def build_lg_model(Movie, Director, Actor):
     score = model_lg.score(X_test, y_test)
     # predict
     
-    return model_lg, X_test.columns, regression_model_mse, score
-
-def prediction_box_office(Movie):
-    model_lg, X_test, y_test = build_lg_model(Movie, Director, Actor)
-    y_predict = model_lg.predict(X_test)
-    regression_model_mse = mean_squared_error(y_predict, y_test)
-    return regression_model_mse, 
-    pass
-
+    return model_lg, X_test.columns, regression_model_mse, score, y_predict, y_test
 
 # movie_df = get_Movie_df(Movie)
 # print(movie_df[:5])

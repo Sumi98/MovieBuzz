@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q, Max, Min
 from .models import Movie, Director, Actor
-from .regressionModel import build_lg_model, prediction_box_office
+from .regressionModel import build_lg_model
 
 
 import csv, os
@@ -166,10 +166,36 @@ def actor(request):
 
     return render(request, "actor.html", {'Actor': actors})
 
+def prediction_search(Movie):
+    
+
+    return title, genre, gross, [year, rating, metascore, votes]
 
 def prediction(request):
     template = "prediction.html"
-    model_lg, paramters, mse, score = build_lg_model(Movie, Director, Actor)
+    # the model
+    model_lg, paramters, mse, score, y_predict, y_test = build_lg_model(Movie, Director, Actor)
+
+    # the movie to be predicted
+    query = request.GET.get('q')
+    tep = "%%%s%%" % query
+    filter_data = Movie.objects.raw(
+        "SELECT m.title AS title, m.year AS year, m.rating AS rating, m.votes AS votes, m.metascore AS metascore, m.genres AS genre \
+                m.gross_earning_in_mil AS gross \
+                FROM pages_movie AS m WHERE m.title LIKE %s", [tep])
+    limit_tuple = filter_data[:1]
+    for movie in limit_tuple:
+        year = movie.year
+        rating = movie.rating
+        metascore = movie.metascore
+        votes = movie.votes
+        genre = movie.genre
+        title = movie.title
+        gross = movie.gross
+
+    # Build dataframe to be predicted
+    
+
     context = {
         'score': score,
         'cols': paramters,
@@ -235,21 +261,22 @@ def new_movie(request):
 
 
 def delete_movie(request, pk):
-    post = get_object_or_404(Movie, pk=pk)
-    try:
-        if request.method == 'POST':
-            form = MovieForm(request.POST, instance=post)
-            post.delete()
-            messages.success(request, 'You have successfully deleted the movie')
-        else:
-            form = MovieForm(instance=post)
-    except Exception as e:
-        messages.warning(request, 'The movie cannot be deleted: Error {}'.format(e))
-    context = {
-        'form': form,
-        'post': post
-    }
-    return render(request, "new_movie.html", context)
+    # post = get_object_or_404(Movie, pk=pk)
+    # try:
+    #     if request.method == 'POST':
+    #         form = MovieForm(request.POST, instance=post)
+    #         post.delete()
+    #         messages.success(request, 'You have successfully deleted the movie')
+    #     else:
+    #         form = MovieForm(instance=post)
+    # except Exception as e:
+    #     messages.warning(request, 'The movie cannot be deleted: Error {}'.format(e))
+    # context = {
+    #     'form': form,
+    #     'post': post
+    # }
+    # return render(request, "new_movie.html", context)
+    pass
 
 
 def search(request):
