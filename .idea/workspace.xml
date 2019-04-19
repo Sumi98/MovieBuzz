@@ -100,8 +100,6 @@
       <change beforePath="$PROJECT_DIR$/Data/img/X-Men: Days of Future Past.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/img/X: First Class.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/movieDB/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movieDB/pages/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/pages/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movieDB/pages/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/movieDB/pages/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movieDB/static/images/poster/300: Rise of an Empire.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/movieDB/static/images/poster/Abraham Lincoln: Vampire Hunter.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/movieDB/static/images/poster/Alien: Covenant.jpg" beforeDir="false" />
@@ -273,17 +271,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="4686" />
+          <entry key="html" value="4812" />
           <entry key="py" value="2429" />
           <entry key="py@CS411_Project" value="174" />
-          <entry key="txt" value="210" />
+          <entry key="txt" value="221" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CommandLine" value="174" />
-          <entry key="HTML" value="4686" />
-          <entry key="PLAIN_TEXT" value="210" />
+          <entry key="HTML" value="4812" />
+          <entry key="PLAIN_TEXT" value="221" />
           <entry key="Python" value="2429" />
         </counts>
       </usages-collector>
@@ -393,8 +391,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="35" column="85" lean-forward="true" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
+            <state relative-caret-position="166">
+              <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -542,6 +540,13 @@
               <item name="CS411_Project" type="462c0819:PsiDirectoryNode" />
               <item name="movieDB" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS411_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS411_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="movieDB" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1909,7 +1914,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555689280817</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="UI updates">
+      <created>1555700104501</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1555700104501</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1923,9 +1935,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1617536" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1617536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1941,7 +1952,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011338" side_tool="true" weight="0.32891247" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49828473" weight="0.32240438" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49962208" weight="0.32891247" />
-      <window_info anchor="bottom" id="manage.py@CS411_Project" order="13" sideWeight="0.4988662" visible="true" weight="0.33289126" />
+      <window_info active="true" anchor="bottom" id="manage.py@CS411_Project" order="13" sideWeight="0.4988662" visible="true" weight="0.33289126" />
       <window_info anchor="bottom" id="Database Console" order="14" sideWeight="0.49962208" weight="0.32891247" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1994,7 +2005,8 @@
     <MESSAGE value="pagination for actor and director fixed" />
     <MESSAGE value="revise insert_data function" />
     <MESSAGE value="deleted rainbow and href in movie table" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted rainbow and href in movie table" />
+    <MESSAGE value="UI updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI updates" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/movieDB/static/images/UIUC.jpg">
@@ -2133,8 +2145,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/pages/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="35" column="85" lean-forward="true" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
+        <state relative-caret-position="166">
+          <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
         </state>
       </provider>
     </entry>
