@@ -9,6 +9,7 @@ Small database for IMDB movie
 
 ### To run the server in localhost:
 `cd movieDB`
+
 `python manage.py runserver`
 
 ### YouTube Demo:
