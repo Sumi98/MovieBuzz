@@ -1,5 +1,5 @@
-## 03.26 (Before demo 1)
-### Next Stage Work (after first demo)
+## Development Notes
+### Next Stage Work (after first demo 03/26/2019)
 - [x] Add more information about other entity: Actors, Directors
 - [-] Another information for Movies entity:
 	- [-] Using IMDB movie ID (e.g 0499549) in Movie data
@@ -32,5 +32,7 @@ Same for Actors, Directors
     `python3 add_data.py`</del>
 * Superuser: group50, yslenjoy@gmail.com, 411group50
 
-### Potential 
-
+### Potential improvements
+- [-] Web scraping files are not elegant (much data preprocessing is still need for the crawled data)
+- [ ] Website deployment
+- [ ] Add user login system
