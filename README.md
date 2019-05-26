@@ -8,6 +8,7 @@ Small database for IMDB movie
 * Front-end interface: Django
 
 ### To run the server in localhost:
+`cd movieDB`
 `python manage.py runserver`
 
 ### YouTube Demo:
