@@ -1,19 +1,14 @@
 import os
-import pip
 # enable results in terminal
 import django
+
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "myapp.settings")
 django.setup()
-
-from pages.models import Movie, Director, Actor
 
 import numpy as np
 import pandas as pd
 # import math
 
-from scipy import stats
-from datetime import datetime
-from sklearn import preprocessing
 from sklearn.model_selection import KFold
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
@@ -31,7 +26,8 @@ def get_Movie_df(Movie):
     movie_df['Rating'] = pd.Series(list(map(lambda x: float(x.rating), Movie.objects.only("rating"))))
     movie_df['MetScore'] = pd.Series(list(map(lambda x: int(x.metascore), Movie.objects.only("metascore"))))
     movie_df['Votes'] = pd.Series(list(map(lambda x: int(x.votes), Movie.objects.only("votes"))))
-    movie_df['Earned'] = pd.Series(list(map(lambda x: float(x.gross_earning_in_mil), Movie.objects.only("gross_earning_in_mil"))))
+    movie_df['Earned'] = pd.Series(
+        list(map(lambda x: float(x.gross_earning_in_mil), Movie.objects.only("gross_earning_in_mil"))))
     # movie_df['Actor'] = pd.Series(list(map(lambda x: x.actor, Movie.objects.only("actor"))))
     # movie_df['Director'] = pd.Series(list(map(lambda x: x.director, Movie.objects.only("director"))))
     # print(movie_df['Earned'])
@@ -47,6 +43,7 @@ def get_Movie_df(Movie):
 
     return movie_df
 
+
 def get_Actor_df(Actor):
     actor_df = pd.DataFrame()
     actor_df['Name'] = pd.Series(list(map(lambda x: x.name, Actor.objects.only("name"))))
@@ -55,11 +52,12 @@ def get_Actor_df(Actor):
     actor_df['AwardWin'] = pd.Series(list(map(lambda x: int(x.award_win), Actor.objects.only("award_win"))))
     actor_df['AwardNom'] = pd.Series(list(map(lambda x: int(x.award_nom), Actor.objects.only("award_nom"))))
     # string split by ', ', only key first 4 columns
-    masterpiece_tmp = pd.DataFrame(list(actor_df['Masterpiece'].str.split(', '))).drop([4, 5, 6], axis = 1)
+    masterpiece_tmp = pd.DataFrame(list(actor_df['Masterpiece'].str.split(', '))).drop([4, 5, 6], axis=1)
     masterpiece_tmp.columns = ['Masterpiece_1', 'Masterpiece_2', 'Masterpiece_3', 'Masterpiece_4']
     actor_df = actor_df.join(masterpiece_tmp)
     return actor_df
     # pass
+
 
 def get_Director_df(Director):
     director_df = pd.DataFrame()
@@ -67,13 +65,14 @@ def get_Director_df(Director):
     director_df['Date'] = pd.Series(list(map(lambda x: x.date, Director.objects.only("date"))))
     director_df['Masterpiece'] = pd.Series(list(map(lambda x: x.masterpiece, Director.objects.only("masterpiece"))))
     # string split by ', ', only key first 4 columns
-    masterpiece_tmp = pd.DataFrame(list(director_df['Masterpiece'].str.split(', '))).drop([4, 5], axis = 1)
+    masterpiece_tmp = pd.DataFrame(list(director_df['Masterpiece'].str.split(', '))).drop([4, 5], axis=1)
     masterpiece_tmp.columns = ['Masterpiece_1', 'Masterpiece_2', 'Masterpiece_3', 'Masterpiece_4']
     director_df['AwardWin'] = pd.Series(list(map(lambda x: int(x.award_win), Director.objects.only("award_win"))))
     director_df['AwardNom'] = pd.Series(list(map(lambda x: int(x.award_nom), Director.objects.only("award_nom"))))
     # print(masterpiece_tmp)
     director_df = director_df.join(masterpiece_tmp)
     return director_df
+
 
 def build_lg_model(Movie, Director, Actor):
     movie_df = get_Movie_df(Movie)
@@ -86,7 +85,7 @@ def build_lg_model(Movie, Director, Actor):
     #     a.name AS star, a.award_win AS a_win, a.award_nom AS a_nom \
     #     FROM ((pages_director AS d LEFT JOIN pages_movie AS m ON d.name = m.director_id) \
     #     LEFT JOIN pages_actor AS a ON a.name = m.actor_id)"
-    
+
     # for records in Movie.objects.raw(sql_string):
     #     filter_data.append(list(records))
     # code above still has error
@@ -96,7 +95,7 @@ def build_lg_model(Movie, Director, Actor):
     # 'Animation', 'Biography', 'Comedy', 'Crime', 'Drama', 'Family',
     # 'Fantasy', 'Horror', 'Mystery', 'Romance', 'Thriller']
     # X = movie_df.drop(['Genre', 'Title', 'Earned', 'Actor', 'Director'], axis = 1)
-    X = movie_df.drop(['Genre', 'Title', 'Earned'], axis = 1)
+    X = movie_df.drop(['Genre', 'Title', 'Earned'], axis=1)
     y = movie_df.Earned
     # print(X.columns)
 
@@ -117,7 +116,7 @@ def build_lg_model(Movie, Director, Actor):
     regression_model_mse = mean_squared_error(y_predict, y_test)
     score = model_lg.score(X_test, y_test)
     # predict
-    
+
     return model_lg, X_test.columns, regression_model_mse, score
 
 # movie_df = get_Movie_df(Movie)
@@ -144,12 +143,4 @@ def build_lg_model(Movie, Director, Actor):
 # print(movie_df.merge(director_df, left_on='Director', right_on = 'Name', suffixes = ('', 'Dir'), how = 'left').loc[:5])
 
 # movie_df.Director.isin(director_df.Name)
-# 
-
-
-
-
-
-
-
-
+#

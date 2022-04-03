@@ -20,10 +20,10 @@
     }
     </style>
 </head>
-    <a href="{% url 'insert_data' %}">Can't find the movie? Add new movies!</a>
-    <h2>Movie Table</h2>
-    <table class="table table-hover table-sm">
-        <thead class="thead-light" data-file-width="5px">
+
+    <h2 style="color: white; text-align:center">Find your movies here</h2>
+    <table class="table table-striped table-dark">
+        <thead class="thead-dark" data-file-width="5px">
             <tr>
                 <th scope="col">MovieID</th>
                 <th scope="col">Year</th>
@@ -57,15 +57,14 @@
             <td align="center"> {{ movie.gross_earning_in_mil }}</td>
             <td> {{ movie.director.name }}</td>
             <td> {{ movie.actor.name }}</td>
-            <td><a href="{% url 'edit_movie' pk=movie.movieid %}"><button class="btn btn-warning">Edit</button></a></td>
+            <td><a href="{% url 'edit_movie' pk=movie.movieid %}"><button class="btn btn-success">Edit</button></a></td>
             <td><a href="{% url 'delete_movie' pk=movie.movieid %}"><button class="btn btn-danger">Delete</button></a></td>
         </tr>
         {% endfor %}
     </table>
-    <a href="{% url 'insert_data' %}">Can't find the movie? Add new movies!</a>
 
 
-    <div class="pagination">
+    <div class="pagination justify-content-center">
         {% if Movie.has_other_pages %}
             <nav aria-label="Page navigation example">
             <ul class="pagination">

@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 
@@ -18,6 +19,7 @@ class Movie(models.Model):
     director = models.ForeignKey('Director', related_name='+', on_delete=models.CASCADE, null=True, blank=True)
     actor = models.ForeignKey('Actor', related_name='ActedBy+', on_delete=models.CASCADE, null=True, blank=True)
 
+
 class Director(models.Model):
     name = models.CharField(max_length=100, primary_key=True)
     date = models.CharField(max_length=100, null=True)
@@ -28,6 +30,7 @@ class Director(models.Model):
     person_link = models.URLField(max_length=500, null=True, default=None)
     award_link = models.URLField(max_length=500, null=True, default=None)
 
+
 class Actor(models.Model):
     name = models.CharField(max_length=100, primary_key=True)
     date = models.CharField(max_length=100, null=True)
@@ -36,4 +39,4 @@ class Actor(models.Model):
     award_win = models.IntegerField(blank=True, null=True, default=None)
     award_nom = models.IntegerField(blank=True, null=True, default=None)
     person_link = models.URLField(max_length=500, null=True, default=None)
-    award_link = models.URLField(max_length=500, null=True, default=None)
+    award_link = models.URLField(max_length=500, blank=True, default=None)

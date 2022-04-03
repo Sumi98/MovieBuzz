@@ -2,7 +2,7 @@
 
 {% block content %}
     <br/><br/>
-    <div class="offset-3 col-md-6">
+    <div class="offset-3 col-md-6 text-white bg-dark">
         {% with url_name=request.resolver_match.url_name %}
             {% if url_name == 'new_movie' %}
                 <h2>Add New Movies</h2>
@@ -32,13 +32,12 @@
                     {% if url_name == 'new_movie' %}
                         <div class="container" align="center"><button type="submit" class="btn btn-primary">Submit</button></div>
                     {% elif url_name == 'edit_movie' %}
-                        <div class="container" align="center"><button type="submit" class="btn btn-warning">Save</button></div>
+                        <div class="container" align="center"><button type="submit" class="btn btn-success">Save</button></div>
                     {% else %}
                         <div class="container" align="center"><button type="submit" class="btn btn-danger">Delete</button></div>
                     {% endif %}
                 {% endwith %}
             </div>
         </form>
-{#        {{ form.as_p }}#}
     </div>
 {% endblock %}
