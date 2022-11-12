@@ -1,2 +1,2 @@
 # sumina
-[Resume](https://Sumi98.gihtub.io/MovieBuzz/blob/gh-pages/Resume%20Sumina.docx)
+[Resume](https://Sumi98.gihtub.io/MovieBuzz/Resume%20Sumina.docx)
